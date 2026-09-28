@@ -1,2642 +1,2732 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zenama Wave — Kartu Review Google dengan QR & NFC untuk Bisnis</title>
+
+  <meta
+    name="description"
+    content="Zenama Wave adalah kartu review bisnis dengan QR Code dan NFC yang memudahkan pelanggan memberikan ulasan Google. Cocok untuk restoran, kafe, hotel, salon, toko, jasa, dan berbagai bisnis."
+  >
+
+  <meta
+    name="keywords"
+    content="Zenama Wave, kartu review Google, Google review card, kartu review bisnis, kartu QR review, kartu NFC review, QR Google Review, NFC Google Review, kartu ulasan Google, alat review Google, review bisnis, kartu review pelanggan"
+  >
+
+  <meta name="author" content="Zenama Group">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link
+    rel="canonical"
+    href="https://card.zenamagroup.com"
+  >
+
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Zenama Wave">
+
+  <meta
+    property="og:title"
+    content="Zenama Wave — Kartu Review Google dengan QR & NFC"
+  >
+
+  <meta
+    property="og:description"
+    content="Kartu review bisnis berbasis QR Code dan NFC yang membantu pelanggan membuka halaman review Google dengan cepat dan mudah."
+  >
+
+  <meta
+    property="og:url"
+    content="https://card.zenamagroup.com"
+  >
+
+  <meta
+    property="og:image"
+    content="https://zenamagroup.com/assets/zenamacard1.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Zenama Wave kartu review Google dengan QR Code dan NFC"
+  >
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Zenama Wave — Kartu Review Google dengan QR & NFC"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Kartu review bisnis dengan QR Code dan NFC untuk memudahkan pelanggan memberikan ulasan."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://zenamagroup.com/assets/zenamacard1.png"
+  >
+
+  <link
+    rel="icon"
+    href="https://zenamagroup.com/assets/zenamacard.png"
+  >
+
+  <!-- =====================================================
+       STRUCTURED DATA
+  ====================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zenama Group",
+    "url": "https://zenamagroup.com",
+    "email": "company@zenamagroup.com",
+    "brand": {
+      "@type": "Brand",
+      "name": "Zenama Wave"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Zenama Wave",
+    "description": "Kartu review bisnis berbasis QR Code dan NFC untuk membantu pelanggan mengakses halaman ulasan Google.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Zenama Wave"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Zenama Group"
+    },
+    "image": [
+      "https://zenamagroup.com/assets/zenamacard.png",
+      "https://zenamagroup.com/assets/zenamacard1.png"
+    ],
+    "category": "Google Review Card"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Zenama Wave",
+    "url": "https://card.zenamagroup.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zenama Group"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apa itu Zenama Wave?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zenama Wave adalah kartu review bisnis yang menggunakan QR Code dan NFC untuk memudahkan pelanggan membuka halaman ulasan Google."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bagaimana pelanggan memberikan review?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pelanggan dapat melakukan scan QR Code atau mengetukkan smartphone yang mendukung NFC pada kartu Zenama Wave, kemudian membuka halaman review bisnis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bisnis apa saja yang dapat menggunakan Zenama Wave?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zenama Wave dapat digunakan oleh restoran, kafe, hotel, salon, toko, klinik, showroom, penyedia jasa, dan berbagai jenis bisnis lainnya."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- =====================================================
+       CSS
+  ====================================================== -->
+
+  <style>
+
+    :root {
+      --black: #111315;
+      --text: #25282a;
+      --muted: #696d70;
+      --light-text: #85898c;
+
+      --white: #ffffff;
+      --paper: #f6f6f3;
+      --paper-2: #eeeeea;
+
+      --line: #deded9;
+
+      --blue: #174f76;
+      --blue-dark: #0d3855;
+
+      --max-width: 1180px;
+
+      --font-sans:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      --font-serif:
+        Georgia,
+        "Times New Roman",
+        serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(
+        var(--max-width),
+        calc(100% - 48px)
+      );
+
+      margin: 0 auto;
+    }
+
+    /* =====================================================
+       HEADER
+    ====================================================== */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255,255,255,.96);
+
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .header-inner {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+
+      font-size: 20px;
+      font-weight: 750;
+
+      letter-spacing: -.04em;
+    }
+
+    .brand-mark {
+      width: 30px;
+      height: 30px;
+
+      border: 2px solid var(--black);
+      border-radius: 50%;
+
+      position: relative;
+
+      display: grid;
+      place-items: center;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+
+      position: absolute;
+
+      border: 1.4px solid var(--black);
+      border-radius: 50%;
+
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+
+      transform: rotate(-45deg);
+    }
+
+    .brand-mark::before {
+      width: 11px;
+      height: 11px;
+    }
+
+    .brand-mark::after {
+      width: 19px;
+      height: 19px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+    }
+
+    .main-nav a {
+      font-size: 14px;
+      color: #505457;
+
+      transition:
+        color .2s ease;
+    }
+
+    .main-nav a:hover {
+      color: var(--black);
+    }
+
+    .main-nav .reseller-link {
+      color: var(--blue);
+      font-weight: 650;
+    }
+
+    .contact-link {
+      border: 1px solid var(--black);
+
+      padding: 9px 16px;
+
+      color: var(--black) !important;
+
+      transition:
+        background .2s ease,
+        color .2s ease;
+    }
+
+    .contact-link:hover {
+      background: var(--black);
+      color: var(--white) !important;
+    }
+
+    /* Hamburger */
+
+    .menu-toggle {
+      display: none;
+
+      width: 42px;
+      height: 42px;
+
+      border: 0;
+      background: transparent;
+
+      position: relative;
+
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      position: absolute;
+
+      left: 9px;
+
+      width: 24px;
+      height: 1.5px;
+
+      background: var(--black);
+
+      transition:
+        top .25s ease,
+        transform .25s ease;
+    }
+
+    .menu-toggle span:first-child {
+      top: 16px;
+    }
+
+    .menu-toggle span:last-child {
+      top: 25px;
+    }
+
+    .menu-toggle.active span:first-child {
+      top: 21px;
+      transform: rotate(45deg);
+    }
+
+    .menu-toggle.active span:last-child {
+      top: 21px;
+      transform: rotate(-45deg);
+    }
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
+    .hero {
+      border-bottom: 1px solid var(--line);
 
-    <title>Zenama Wave — Kartu Review QR & NFC untuk Bisnis</title>
+      overflow: hidden;
+    }
 
-    <meta name="description"
-        content="Zenama Wave adalah kartu QR & NFC untuk membantu bisnis memberikan akses review Google dengan cara yang mudah, cepat, dan modern.">
+    .hero-grid {
+      min-height: 690px;
 
-    <meta name="theme-color" content="#ffffff">
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-    <style>
+      align-items: center;
 
-        /* =========================================================
-           ZENAMA WAVE
-           INDEX PAGE ONLY
-           Header & Footer dipanggil dari file terpisah
-        ========================================================= */
+      gap: 70px;
+    }
 
-        :root {
-            --blue: #1769ff;
-            --blue-dark: #0d4dcc;
-            --blue-soft: #eef5ff;
+    .hero-copy {
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
 
-            --mint: #20d8b0;
+      margin-bottom: 23px;
+
+      color: var(--blue);
 
-            --black: #0b1118;
-            --text: #252c36;
-            --muted: #6d7682;
+      font-size: 12px;
+      font-weight: 700;
 
-            --white: #ffffff;
-            --surface: #f7f9fc;
-            --line: #e7ebf0;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
 
-            --radius: 20px;
-            --radius-lg: 30px;
+    .eyebrow::before {
+      content: "";
 
-            --shadow:
-                0 20px 60px rgba(12, 31, 55, .09);
+      width: 24px;
+      height: 1px;
 
-            --container: 1180px;
-        }
-
-
-        /* =========================================================
-           RESET
-        ========================================================= */
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family:
-                Inter,
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            color: var(--text);
-            background: var(--white);
-
-            line-height: 1.6;
-
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: min(
-                calc(100% - 48px),
-                var(--container)
-            );
-
-            margin-inline: auto;
-        }
-
-
-        /* =========================================================
-           TEXT SYSTEM
-        ========================================================= */
-
-        .section-label {
-            display: inline-block;
-
-            color: var(--blue);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            letter-spacing: .14em;
-            text-transform: uppercase;
-        }
-
-        .section-heading {
-            max-width: 760px;
-            margin-bottom: 55px;
-        }
-
-        .section-heading.center {
-            margin-inline: auto;
-            text-align: center;
-        }
-
-        .section-heading h2 {
-            margin-top: 15px;
-
-            color: var(--black);
-
-            font-size: clamp(36px, 4.5vw, 55px);
-            line-height: 1.07;
-
-            letter-spacing: -2.5px;
-        }
-
-        .section-heading p {
-            max-width: 650px;
-
-            margin-top: 18px;
-
-            color: var(--muted);
-
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-        .section-heading.center p {
-            margin-inline: auto;
-        }
-
-
-        /* =========================================================
-           BUTTON
-        ========================================================= */
-
-        .btn {
-            min-height: 48px;
-
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 0 22px;
-
-            border-radius: 12px;
-
-            font-size: 14px;
-            font-weight: 700;
-
-            transition:
-                transform .2s ease,
-                background .2s ease,
-                box-shadow .2s ease,
-                border-color .2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .btn-primary {
-            color: #fff;
-            background: var(--blue);
-
-            box-shadow:
-                0 12px 30px rgba(23,105,255,.20);
-        }
-
-        .btn-primary:hover {
-            background: var(--blue-dark);
-
-            box-shadow:
-                0 16px 35px rgba(23,105,255,.25);
-        }
-
-        .btn-secondary {
-            color: var(--text);
-            background: #fff;
-
-            border: 1px solid var(--line);
-        }
-
-        .btn-secondary:hover {
-            border-color: #ccd5df;
-
-            box-shadow:
-                0 10px 30px rgba(16,31,55,.07);
-        }
-
-        .btn-light {
-            color: var(--black);
-            background: #fff;
-        }
-
-        .btn-outline-light {
-            color: #fff;
-            background: transparent;
-
-            border: 1px solid rgba(255,255,255,.3);
-        }
-
-        .btn-outline-light:hover {
-            background: rgba(255,255,255,.08);
-
-            border-color:
-                rgba(255,255,255,.55);
-        }
-
-
-        /* =========================================================
-           HERO
-        ========================================================= */
-
-        .hero {
-            position: relative;
-            overflow: hidden;
-
-            padding: 105px 0 115px;
-
-            background:
-                radial-gradient(
-                    circle at 80% 45%,
-                    rgba(23,105,255,.08),
-                    transparent 34%
-                ),
-                #fff;
-        }
-
-        .hero::after {
-            content: "";
-
-            position: absolute;
-
-            width: 520px;
-            height: 520px;
-
-            right: -250px;
-            top: 30px;
-
-            border-radius: 50%;
-
-            background:
-                radial-gradient(
-                    circle,
-                    rgba(32,216,176,.08),
-                    transparent 65%
-                );
-
-            pointer-events: none;
-        }
-
-        .hero-grid {
-            position: relative;
-            z-index: 1;
-
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1fr)
-                minmax(0, 1fr);
-
-            align-items: center;
-
-            gap: 65px;
-        }
-
-        .hero-content {
-            max-width: 620px;
-        }
-
-        .eyebrow {
-            display: inline-block;
-
-            margin-bottom: 20px;
-
-            padding: 7px 12px;
-
-            color: var(--blue);
-
-            background: #f5f9ff;
-
-            border: 1px solid #dce8ff;
-            border-radius: 999px;
-
-            font-size: 10px;
-            font-weight: 800;
-
-            letter-spacing: .13em;
-        }
-
-        .hero h1 {
-            color: var(--black);
-
-            font-size:
-                clamp(46px, 5.3vw, 72px);
-
-            line-height: 1.02;
-
-            letter-spacing: -3.5px;
-
-            font-weight: 800;
-        }
-
-        .hero h1 span {
-            display: block;
-            color: var(--blue);
-        }
-
-        .hero-description {
-            max-width: 570px;
-
-            margin-top: 25px;
-
-            color: var(--muted);
-
-            font-size: 17px;
-
-            line-height: 1.75;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-
-            gap: 11px;
-
-            margin-top: 32px;
-        }
-
-        .hero-note {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-
-            margin-top: 24px;
-
-            color: #7a838e;
-
-            font-size: 12px;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-
-            flex-shrink: 0;
-
-            border-radius: 50%;
-
-            background: var(--mint);
-
-            box-shadow:
-                0 0 0 5px rgba(32,216,176,.1);
-        }
-
-
-        /* =========================================================
-           HERO PRODUCT
-        ========================================================= */
-
-        .hero-visual {
-            position: relative;
-
-            min-height: 500px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-product {
-            position: relative;
-
-            width: min(100%, 540px);
-
-            padding: 20px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            animation:
-                productFloat 6s ease-in-out infinite;
-        }
+      background: var(--blue);
+    }
 
-        .hero-product::before {
-            content: "";
+    .hero h1 {
+      max-width: 650px;
 
-            position: absolute;
+      font-size: clamp(
+        44px,
+        5vw,
+        72px
+      );
 
-            width: 68%;
-            height: 25%;
+      line-height: 1.02;
 
-            left: 16%;
-            bottom: 8%;
+      letter-spacing: -.055em;
 
-            border-radius: 50%;
+      font-weight: 730;
 
-            background:
-                rgba(10,35,70,.13);
+      color: var(--black);
+    }
 
-            filter: blur(35px);
+    .hero h1 em {
+      font-family: var(--font-serif);
+      font-weight: 400;
+    }
 
-            z-index: -1;
-        }
-
-        .hero-product img {
-            width: 100%;
-            height: auto;
-
-            object-fit: contain;
-
-            filter:
-                drop-shadow(
-                    0 28px 30px rgba(12,28,52,.15)
-                );
-        }
-
-        @keyframes productFloat {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-        }
-
-
-        /* =========================================================
-           HERO BADGES
-        ========================================================= */
-
-        .floating-badge {
-            position: absolute;
-
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            padding: 11px 14px;
-
-            background:
-                rgba(255,255,255,.95);
-
-            border: 1px solid #e2e8ef;
-
-            border-radius: 13px;
-
-            box-shadow:
-                0 15px 40px rgba(17,32,55,.1);
-
-            backdrop-filter: blur(12px);
-        }
-
-        .floating-badge strong {
-            color: var(--blue);
-
-            font-size: 12px;
-            font-weight: 800;
-        }
-
-        .floating-badge span {
-            color: #68727e;
-
-            font-size: 11px;
-            font-weight: 600;
-        }
-
-        .badge-one {
-            left: 2%;
-            top: 17%;
-        }
-
-        .badge-two {
-            right: 1%;
-            bottom: 16%;
-        }
-
-
-        /* =========================================================
-           INTRO
-        ========================================================= */
-
-        .intro {
-            padding: 105px 0;
-
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
-        }
-
-        .intro-grid {
-            display: grid;
-
-            grid-template-columns:
-                .95fr
-                1fr;
-
-            gap: 100px;
-        }
-
-        .intro h2 {
-            max-width: 600px;
-
-            margin-top: 16px;
-
-            color: var(--black);
-
-            font-size:
-                clamp(34px,4vw,53px);
-
-            line-height: 1.08;
-
-            letter-spacing: -2.2px;
-        }
-
-        .intro-grid > div:last-child {
-            padding-top: 10px;
-        }
-
-        .intro p {
-            max-width: 570px;
-
-            margin-bottom: 18px;
-
-            color: var(--muted);
-
-            font-size: 16px;
+    .hero-description {
+      max-width: 560px;
 
-            line-height: 1.8;
-        }
-
-
-        /* =========================================================
-           PRODUCT
-        ========================================================= */
-
-        .product-section {
-            padding: 120px 0;
-
-            background: var(--surface);
-        }
-
-        .product-showcase {
-            display: grid;
-
-            grid-template-columns:
-                minmax(0,1fr)
-                minmax(0,1fr);
-
-            align-items: center;
+      margin-top: 27px;
 
-            gap: 90px;
-        }
-
-        .showcase-card {
-            min-height: 500px;
+      color: var(--muted);
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+      font-size: 17px;
 
-            padding: 35px;
+      line-height: 1.8;
+    }
 
-            background: #fff;
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
 
-            border: 1px solid var(--line);
-            border-radius: var(--radius-lg);
+      gap: 13px;
 
-            box-shadow:
-                0 20px 60px rgba(16,31,55,.09);
-        }
+      margin-top: 35px;
+    }
 
-        .card-image-wrapper {
-            width: 100%;
+    .button {
+      min-height: 46px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
 
-        .card-image-wrapper img {
-            width: 100%;
-            max-width: 520px;
+      padding: 0 19px;
 
-            object-fit: contain;
+      border: 1px solid var(--black);
 
-            transition:
-                transform .45s ease,
-                filter .45s ease;
-        }
+      font-size: 14px;
+      font-weight: 650;
 
-        .showcase-card:hover img {
-            transform:
-                translateY(-7px)
-                scale(1.015);
-
-            filter:
-                drop-shadow(
-                    0 20px 25px rgba(13,36,72,.12)
-                );
-        }
+      transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+    }
 
-        .showcase-content {
-            max-width: 560px;
-        }
+    .button-dark {
+      background: var(--black);
+      color: var(--white);
+    }
 
-        .mini-label {
-            display: inline-block;
+    .button-dark:hover {
+      background: #333638;
+      border-color: #333638;
+    }
 
-            margin-bottom: 15px;
+    .button-light:hover {
+      background: var(--paper);
+    }
 
-            color: var(--blue);
+    .hero-note {
+      margin-top: 24px;
 
-            font-size: 11px;
-            font-weight: 800;
+      color: var(--light-text);
 
-            letter-spacing: .13em;
-        }
+      font-size: 12px;
+    }
 
-        .showcase-content h3 {
-            color: var(--black);
+    /* Hero visual */
 
-            font-size:
-                clamp(30px,3.5vw,44px);
+    .hero-visual {
+      min-height: 570px;
 
-            line-height: 1.12;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-            letter-spacing: -1.7px;
-        }
+      background: var(--paper);
 
-        .showcase-content > p {
-            margin-top: 20px;
+      position: relative;
 
-            color: var(--muted);
+      overflow: hidden;
+    }
 
-            font-size: 16px;
+    .hero-visual::before {
+      content: "";
 
-            line-height: 1.8;
-        }
+      position: absolute;
 
-        .feature-list {
-            display: flex;
-            flex-direction: column;
+      width: 460px;
+      height: 460px;
 
-            margin-top: 32px;
-        }
+      border: 1px solid #deded9;
 
-        .feature-item {
-            display: grid;
+      border-radius: 50%;
+    }
 
-            grid-template-columns: 40px 1fr;
+    .hero-product {
+      width: min(570px, 94%);
 
-            gap: 16px;
+      position: relative;
+      z-index: 2;
 
-            padding: 19px 0;
+      transform: translateY(5px);
 
-            border-top: 1px solid var(--line);
-        }
+      filter:
+        drop-shadow(
+          0 25px 35px rgba(0,0,0,.12)
+        );
 
-        .feature-number {
-            color: var(--blue);
+      transition:
+        transform .45s ease;
+    }
 
-            font-size: 11px;
-            font-weight: 800;
-        }
+    .hero-product:hover {
+      transform:
+        translateY(-4px);
+    }
 
-        .feature-item strong {
-            color: var(--black);
+    /* =====================================================
+       INTRO
+    ====================================================== */
 
-            font-size: 15px;
-        }
+    .intro {
+      padding: 105px 0;
+    }
 
-        .feature-item p {
-            margin-top: 4px;
+    .intro-grid {
+      display: grid;
 
-            color: var(--muted);
+      grid-template-columns:
+        .8fr 1.2fr;
 
-            font-size: 13px;
+      gap: 90px;
+    }
 
-            line-height: 1.65;
-        }
+    .section-label {
+      font-size: 12px;
 
+      color: var(--blue);
 
-        /* =========================================================
-           HOW IT WORKS
-        ========================================================= */
+      font-weight: 700;
 
-        .how-section {
-            padding: 120px 0;
-        }
+      text-transform: uppercase;
 
-        .steps {
-            display: grid;
+      letter-spacing: .12em;
+    }
 
-            grid-template-columns:
-                repeat(3,1fr);
+    .intro h2 {
+      margin-top: 16px;
 
-            gap: 20px;
-        }
+      font-family: var(--font-serif);
 
-        .step {
-            min-height: 260px;
+      font-weight: 400;
 
-            padding: 32px;
+      font-size: clamp(
+        32px,
+        4vw,
+        51px
+      );
 
-            background: #fff;
+      line-height: 1.08;
 
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
+      letter-spacing: -.035em;
+    }
 
-            transition:
-                transform .25s ease,
-                box-shadow .25s ease;
-        }
+    .intro-copy {
+      color: var(--muted);
 
-        .step:hover {
-            transform: translateY(-6px);
+      font-size: 17px;
 
-            box-shadow: var(--shadow);
-        }
+      line-height: 1.9;
+    }
 
-        .step-number {
-            display: inline-flex;
+    .intro-copy p + p {
+      margin-top: 22px;
+    }
 
-            width: 42px;
-            height: 42px;
+    /* =====================================================
+       PRODUCT
+    ====================================================== */
 
-            align-items: center;
-            justify-content: center;
+    .product-section {
+      background: var(--paper);
 
-            margin-bottom: 50px;
+      padding: 110px 0;
 
-            color: var(--blue);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
-            background: var(--blue-soft);
+    .product-grid {
+      display: grid;
 
-            border-radius: 11px;
+      grid-template-columns:
+        1fr 1fr;
 
-            font-size: 11px;
-            font-weight: 800;
-        }
+      align-items: center;
 
-        .step h3 {
-            color: var(--black);
+      gap: 90px;
+    }
 
-            font-size: 20px;
+    .product-image {
+      background: var(--white);
 
-            letter-spacing: -.4px;
-        }
+      border: 1px solid var(--line);
 
-        .step p {
-            margin-top: 10px;
+      padding: 35px;
+    }
 
-            color: var(--muted);
+    .product-image img {
+      width: 100%;
+      height: auto;
 
-            font-size: 14px;
+      object-fit: contain;
+    }
 
-            line-height: 1.7;
-        }
+    .product-content h2 {
+      margin-top: 14px;
 
+      font-size: clamp(
+        35px,
+        4vw,
+        54px
+      );
 
-        /* =========================================================
-           FEATURES
-        ========================================================= */
+      line-height: 1.05;
 
-        .features-section {
-            padding: 120px 0;
+      letter-spacing: -.05em;
+    }
 
-            background: var(--surface);
-        }
+    .product-content > p {
+      margin-top: 23px;
 
-        .feature-grid {
-            display: grid;
+      color: var(--muted);
 
-            grid-template-columns:
-                repeat(3,1fr);
+      font-size: 16px;
 
-            gap: 16px;
-        }
+      line-height: 1.85;
+    }
 
-        .feature-box {
-            min-height: 245px;
+    .product-points {
+      list-style: none;
 
-            padding: 30px;
+      margin-top: 31px;
 
-            background: #fff;
+      border-top: 1px solid var(--line);
+    }
 
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
+    .product-points li {
+      padding: 15px 0;
 
-            transition:
-                transform .25s ease,
-                box-shadow .25s ease;
-        }
+      border-bottom: 1px solid var(--line);
 
-        .feature-box:hover {
-            transform: translateY(-5px);
+      display: flex;
+      gap: 15px;
 
-            box-shadow:
-                0 12px 35px rgba(16,31,55,.07);
-        }
+      font-size: 14px;
+    }
 
-        .feature-icon {
-            display: inline-flex;
+    .product-points strong {
+      min-width: 105px;
+    }
 
-            min-width: 45px;
-            height: 45px;
+    /* =====================================================
+       HOW IT WORKS
+    ====================================================== */
 
-            align-items: center;
-            justify-content: center;
+    .how {
+      padding: 110px 0;
+    }
 
-            padding: 0 10px;
+    .section-heading {
+      max-width: 700px;
+    }
 
-            margin-bottom: 35px;
+    .section-heading h2 {
+      margin-top: 15px;
 
-            color: var(--blue);
+      font-size: clamp(
+        35px,
+        4vw,
+        55px
+      );
 
-            background: var(--blue-soft);
+      line-height: 1.05;
 
-            border-radius: 11px;
+      letter-spacing: -.05em;
+    }
 
-            font-size: 11px;
-            font-weight: 800;
-        }
+    .section-heading p {
+      margin-top: 20px;
 
-        .feature-box h3 {
-            color: var(--black);
+      color: var(--muted);
 
-            font-size: 19px;
-        }
+      font-size: 16px;
 
-        .feature-box p {
-            margin-top: 9px;
+      max-width: 620px;
+    }
 
-            color: var(--muted);
+    .steps {
+      margin-top: 65px;
 
-            font-size: 14px;
+      display: grid;
 
-            line-height: 1.7;
-        }
+      grid-template-columns:
+        repeat(3, 1fr);
 
+      border-top: 1px solid var(--line);
+    }
 
-        /* =========================================================
-           BUSINESS
-        ========================================================= */
+    .step {
+      padding: 30px 30px 30px 0;
 
-        .business-section {
-            padding: 120px 0;
-        }
+      border-bottom: 1px solid var(--line);
+    }
 
-        .business-grid {
-            display: grid;
+    .step + .step {
+      padding-left: 30px;
 
-            grid-template-columns:
-                .85fr
-                1.15fr;
+      border-left: 1px solid var(--line);
+    }
 
-            gap: 100px;
-        }
+    .step-number {
+      font-family: var(--font-serif);
 
-        .business-grid h2 {
-            max-width: 560px;
+      font-size: 35px;
 
-            margin-top: 16px;
+      color: #a4a7a8;
+    }
 
-            color: var(--black);
+    .step h3 {
+      margin-top: 23px;
 
-            font-size:
-                clamp(35px,4vw,52px);
+      font-size: 21px;
 
-            line-height: 1.08;
+      letter-spacing: -.025em;
+    }
 
-            letter-spacing: -2.3px;
-        }
+    .step p {
+      margin-top: 11px;
 
-        .business-grid > div:first-child p {
-            max-width: 500px;
+      color: var(--muted);
 
-            margin-top: 20px;
+      font-size: 14px;
 
-            color: var(--muted);
+      line-height: 1.75;
+    }
 
-            font-size: 16px;
+    /* =====================================================
+       FEATURES
+    ====================================================== */
 
-            line-height: 1.8;
-        }
+    .features {
+      padding: 105px 0;
 
-        .business-list {
-            display: grid;
+      background: var(--black);
 
-            grid-template-columns:
-                repeat(2,1fr);
+      color: var(--white);
+    }
 
-            border-top: 1px solid var(--line);
-        }
+    .features .section-label {
+      color: #a9c8dc;
+    }
 
-        .business-list > div {
-            display: flex;
-            align-items: center;
+    .features-heading {
+      display: grid;
 
-            gap: 15px;
+      grid-template-columns:
+        1fr 1fr;
 
-            min-height: 82px;
+      gap: 70px;
+    }
 
-            border-bottom: 1px solid var(--line);
-        }
+    .features h2 {
+      margin-top: 15px;
 
-        .business-list span {
-            color: var(--blue);
+      font-size: clamp(
+        35px,
+        4vw,
+        55px
+      );
 
-            font-size: 10px;
-            font-weight: 800;
-        }
+      line-height: 1.05;
 
-        .business-list strong {
-            color: var(--black);
+      letter-spacing: -.05em;
+    }
 
-            font-size: 14px;
-        }
+    .features-intro {
+      padding-top: 40px;
 
+      color: #b9bdc0;
 
-        /* =========================================================
-           DASHBOARD
-        ========================================================= */
+      font-size: 16px;
 
-        .dashboard-section {
-            padding: 120px 0;
+      line-height: 1.8;
+    }
 
-            background: var(--surface);
-        }
+    .feature-list {
+      margin-top: 65px;
 
-        .dashboard-wrapper {
-            display: grid;
+      display: grid;
 
-            grid-template-columns:
-                .8fr
-                1.2fr;
+      grid-template-columns:
+        repeat(2, 1fr);
 
-            gap: 80px;
+      border-top: 1px solid #35383a;
+    }
 
-            align-items: center;
-        }
+    .feature {
+      padding: 29px 35px 31px 0;
 
-        .dashboard-text h2 {
-            max-width: 550px;
+      border-bottom: 1px solid #35383a;
+    }
 
-            margin-top: 15px;
+    .feature:nth-child(even) {
+      padding-left: 35px;
 
-            color: var(--black);
+      border-left: 1px solid #35383a;
+    }
 
-            font-size:
-                clamp(35px,4vw,52px);
+    .feature h3 {
+      font-size: 18px;
 
-            line-height: 1.08;
+      font-weight: 650;
+    }
 
-            letter-spacing: -2.3px;
-        }
+    .feature p {
+      margin-top: 9px;
 
-        .dashboard-text > p {
-            max-width: 510px;
+      color: #9da2a5;
 
-            margin:
-                20px 0 28px;
+      font-size: 14px;
 
-            color: var(--muted);
+      line-height: 1.75;
+    }
 
-            font-size: 16px;
+    /* =====================================================
+       BUSINESS
+    ====================================================== */
 
-            line-height: 1.8;
-        }
+    .business {
+      padding: 110px 0;
+    }
 
-        .dashboard-preview {
-            min-height: 370px;
+    .business-layout {
+      display: grid;
 
-            padding: 28px;
+      grid-template-columns:
+        .8fr 1.2fr;
 
-            background: #fff;
+      gap: 90px;
+    }
 
-            border: 1px solid var(--line);
-            border-radius: var(--radius-lg);
+    .business h2 {
+      margin-top: 15px;
 
-            box-shadow: var(--shadow);
-        }
+      font-size: clamp(
+        34px,
+        4vw,
+        51px
+      );
 
-        .dashboard-top {
-            display: flex;
-            justify-content: space-between;
+      line-height: 1.06;
 
-            padding-bottom: 20px;
+      letter-spacing: -.05em;
+    }
 
-            border-bottom: 1px solid var(--line);
-        }
+    .business-copy {
+      color: var(--muted);
 
-        .dashboard-top span:first-child {
-            color: var(--black);
+      font-size: 16px;
 
-            font-size: 14px;
-            font-weight: 800;
-        }
+      line-height: 1.85;
+    }
 
-        .dashboard-top span:last-child {
-            color: #8b94a0;
+    .business-list {
+      margin-top: 32px;
 
-            font-size: 11px;
-        }
+      display: grid;
 
-        .dashboard-stats {
-            display: grid;
+      grid-template-columns:
+        repeat(2, 1fr);
 
-            grid-template-columns:
-                repeat(2,1fr);
+      gap: 0;
 
-            gap: 15px;
+      border-top: 1px solid var(--line);
+    }
 
-            margin-top: 22px;
-        }
+    .business-item {
+      padding: 18px 15px 18px 0;
 
-        .dashboard-stats > div {
-            padding: 20px;
+      border-bottom: 1px solid var(--line);
 
-            background: #f7f9fc;
+      font-size: 14px;
+    }
 
-            border-radius: 14px;
-        }
+    .business-item:nth-child(even) {
+      padding-left: 20px;
 
-        .dashboard-stats small {
-            display: block;
+      border-left: 1px solid var(--line);
+    }
 
-            color: #7a8490;
+    /* =====================================================
+       REVIEW SECTION
+    ====================================================== */
 
-            font-size: 11px;
-        }
+    .review-section {
+      padding: 100px 0;
 
-        .dashboard-stats strong {
-            display: block;
+      background: var(--paper);
 
-            margin-top: 7px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
-            color: var(--black);
+    .review-grid {
+      display: grid;
 
-            font-size: 30px;
+      grid-template-columns:
+        1fr 1fr;
 
-            line-height: 1;
-        }
+      gap: 80px;
 
-        .dashboard-chart {
-            position: relative;
+      align-items: center;
+    }
 
-            height: 130px;
+    .review-grid h2 {
+      margin-top: 15px;
 
-            margin-top: 28px;
+      font-size: clamp(
+        35px,
+        4vw,
+        53px
+      );
 
-            overflow: hidden;
+      line-height: 1.05;
 
-            border-bottom: 1px solid var(--line);
-        }
+      letter-spacing: -.05em;
+    }
 
-        .dashboard-chart::before {
-            content: "";
-
-            position: absolute;
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    to bottom,
-                    transparent 24%,
-                    #eef1f5 25%,
-                    transparent 26%,
-                    transparent 49%,
-                    #eef1f5 50%,
-                    transparent 51%,
-                    transparent 74%,
-                    #eef1f5 75%,
-                    transparent 76%
-                );
-        }
+    .review-grid p {
+      margin-top: 22px;
 
-        .chart-line {
-            position: absolute;
+      color: var(--muted);
 
-            left: 3%;
-            right: 3%;
-            bottom: 28px;
+      line-height: 1.85;
+    }
 
-            height: 80px;
+    .review-note {
+      margin-top: 28px;
 
-            border-top:
-                3px solid var(--blue);
+      padding-left: 20px;
 
-            transform:
-                skewY(-10deg)
-                rotate(-1deg);
+      border-left: 2px solid var(--blue);
 
-            border-radius: 50%;
-        }
+      color: var(--text);
 
-        .chart-labels {
-            position: absolute;
+      font-size: 14px;
+    }
 
-            left: 0;
-            right: 0;
-            bottom: 0;
+    .review-visual {
+      background: var(--white);
 
-            display: flex;
-            justify-content: space-between;
-        }
+      border: 1px solid var(--line);
 
-        .chart-labels span {
-            color: #929aa5;
+      padding: 45px;
+    }
 
-            font-size: 9px;
-        }
+    .review-visual img {
+      width: 100%;
 
+      object-fit: contain;
+    }
 
-        /* =========================================================
-           ABOUT
-        ========================================================= */
+    /* =====================================================
+       FAQ
+    ====================================================== */
 
-        .about-section {
-            padding: 120px 0;
-        }
+    .faq {
+      padding: 110px 0;
+    }
 
-        .about-grid {
-            display: grid;
+    .faq-list {
+      margin-top: 60px;
 
-            grid-template-columns:
-                .95fr
-                1fr;
+      border-top: 1px solid var(--line);
+    }
 
-            gap: 100px;
-        }
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
 
-        .about-grid h2 {
-            max-width: 600px;
+    .faq-question {
+      width: 100%;
 
-            margin-top: 16px;
+      padding: 24px 0;
 
-            color: var(--black);
+      background: transparent;
 
-            font-size:
-                clamp(35px,4vw,52px);
+      border: 0;
 
-            line-height: 1.08;
+      cursor: pointer;
 
-            letter-spacing: -2.3px;
-        }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        .about-grid > div:last-child {
-            padding-top: 10px;
-        }
+      text-align: left;
 
-        .about-grid p {
-            max-width: 580px;
+      color: var(--black);
 
-            margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 650;
+    }
 
-            color: var(--muted);
+    .faq-icon {
+      width: 24px;
+      height: 24px;
 
-            font-size: 16px;
+      display: grid;
+      place-items: center;
 
-            line-height: 1.8;
-        }
+      font-size: 21px;
 
+      font-weight: 300;
 
-        /* =========================================================
-           FAQ
-        ========================================================= */
+      color: var(--muted);
 
-        .faq-section {
-            padding: 120px 0;
+      transition: transform .25s ease;
+    }
 
-            background: var(--surface);
-        }
+    .faq-answer {
+      max-height: 0;
 
-        .faq-list {
-            max-width: 800px;
+      overflow: hidden;
 
-            margin-inline: auto;
-        }
+      transition:
+        max-height .3s ease;
+    }
 
-        .faq-list details {
-            border-bottom: 1px solid var(--line);
-        }
+    .faq-answer-inner {
+      padding: 0 45px 24px 0;
 
-        .faq-list details:first-child {
-            border-top: 1px solid var(--line);
-        }
+      color: var(--muted);
 
-        .faq-list summary {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+      font-size: 14px;
 
-            padding: 23px 0;
+      line-height: 1.8;
+    }
 
-            color: var(--black);
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
 
-            font-size: 15px;
-            font-weight: 700;
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
 
-            cursor: pointer;
+    /* =====================================================
+       CTA
+    ====================================================== */
 
-            list-style: none;
-        }
+    .cta {
+      padding: 95px 0;
 
-        .faq-list summary::-webkit-details-marker {
-            display: none;
-        }
+      border-top: 1px solid var(--line);
+    }
 
-        .faq-list summary span {
-            color: var(--blue);
+    .cta-inner {
+      display: flex;
 
-            font-size: 22px;
+      align-items: center;
+      justify-content: space-between;
 
-            transition:
-                transform .2s ease;
-        }
+      gap: 50px;
+    }
 
-        .faq-list details[open]
-        summary span {
-            transform: rotate(45deg);
-        }
+    .cta h2 {
+      max-width: 720px;
 
-        .faq-list details p {
-            max-width: 700px;
+      font-size: clamp(
+        35px,
+        4vw,
+        56px
+      );
 
-            padding:
-                0 40px 24px 0;
+      line-height: 1.04;
 
-            color: var(--muted);
+      letter-spacing: -.055em;
+    }
 
-            font-size: 14px;
+    .cta p {
+      max-width: 560px;
 
-            line-height: 1.75;
-        }
+      margin-top: 17px;
 
+      color: var(--muted);
 
-        /* =========================================================
-           CTA
-        ========================================================= */
+      font-size: 15px;
+    }
 
-        .cta-section {
-            padding: 90px 0;
-        }
+    .cta-action {
+      flex-shrink: 0;
+    }
 
-        .cta-box {
-            position: relative;
-            overflow: hidden;
-
-            padding: 80px 60px;
-
-            text-align: center;
-
-            border-radius: var(--radius-lg);
-
-            background:
-                radial-gradient(
-                    circle at 80% 20%,
-                    rgba(32,216,176,.16),
-                    transparent 30%
-                ),
-                linear-gradient(
-                    135deg,
-                    #0a1018,
-                    #121c2a
-                );
-
-            box-shadow:
-                0 30px 90px rgba(12,28,52,.14);
-        }
+    /* =====================================================
+       FOOTER
+    ====================================================== */
 
-        .cta-box::before {
-            content: "";
+    .site-footer {
+      background: #111315;
 
-            position: absolute;
+      color: var(--white);
+    }
 
-            width: 350px;
-            height: 350px;
+    .footer-main {
+      padding: 70px 0 60px;
 
-            left: -180px;
-            bottom: -220px;
+      display: grid;
 
-            border-radius: 50%;
+      grid-template-columns:
+        1.5fr 1fr 1fr 1fr;
 
-            background:
-                rgba(23,105,255,.18);
+      gap: 55px;
+    }
 
-            filter: blur(20px);
-        }
+    .footer-brand {
+      max-width: 330px;
+    }
 
-        .cta-box > * {
-            position: relative;
-            z-index: 1;
-        }
+    .footer-brand .brand {
+      color: var(--white);
+    }
 
-        .cta-box .section-label {
-            color: #8db5ff;
-        }
+    .footer-brand .brand-mark {
+      border-color: var(--white);
+    }
 
-        .cta-box h2 {
-            max-width: 760px;
+    .footer-brand .brand-mark::before,
+    .footer-brand .brand-mark::after {
+      border-color: var(--white);
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
 
-            margin:
-                15px auto 0;
+    .footer-description {
+      margin-top: 20px;
 
-            color: #fff;
+      color: #969b9e;
 
-            font-size:
-                clamp(36px,5vw,60px);
+      font-size: 14px;
 
-            line-height: 1.05;
+      line-height: 1.8;
+    }
 
-            letter-spacing: -2.5px;
-        }
+    .footer-heading {
+      margin-bottom: 18px;
 
-        .cta-box > p {
-            max-width: 600px;
+      font-size: 12px;
 
-            margin: 20px auto 0;
+      color: #dfe1e2;
 
-            color: #aab5c3;
+      text-transform: uppercase;
 
-            font-size: 16px;
-        }
+      letter-spacing: .12em;
+    }
 
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
+    .footer-links {
+      list-style: none;
+    }
 
-            flex-wrap: wrap;
+    .footer-links li + li {
+      margin-top: 11px;
+    }
 
-            gap: 10px;
+    .footer-links a {
+      color: #969b9e;
 
-            margin-top: 30px;
-        }
+      font-size: 14px;
 
+      transition: color .2s ease;
+    }
 
-        /* =========================================================
-           RESPONSIVE
-        ========================================================= */
+    .footer-links a:hover {
+      color: var(--white);
+    }
 
-        @media (max-width: 1000px) {
+    .footer-contact {
+      color: #969b9e;
 
-            .hero-grid {
-                gap: 35px;
-            }
+      font-size: 14px;
 
-            .intro-grid,
-            .product-showcase,
-            .business-grid,
-            .dashboard-wrapper,
-            .about-grid {
-                gap: 55px;
-            }
+      line-height: 1.8;
+    }
 
-        }
+    .footer-contact a {
+      color: #dfe1e2;
+    }
 
+    .footer-bottom {
+      min-height: 70px;
 
-        @media (max-width: 780px) {
+      border-top: 1px solid #2e3234;
 
-            .container {
-                width:
-                    min(
-                        calc(100% - 32px),
-                        var(--container)
-                    );
-            }
+      display: flex;
 
-            .hero {
-                padding:
-                    70px 0 80px;
-            }
+      align-items: center;
+      justify-content: space-between;
 
-            .hero-grid {
-                grid-template-columns: 1fr;
+      gap: 25px;
 
-                gap: 30px;
-            }
+      color: #777c7f;
 
-            .hero-content {
-                max-width: 650px;
+      font-size: 12px;
+    }
 
-                margin-inline: auto;
+    .footer-bottom-links {
+      display: flex;
+      gap: 22px;
+    }
 
-                text-align: center;
-            }
+    .footer-bottom-links a:hover {
+      color: var(--white);
+    }
 
-            .hero h1 {
-                font-size:
-                    clamp(43px,13vw,60px);
+    /* =====================================================
+       MOBILE NAV
+    ====================================================== */
 
-                letter-spacing: -2.7px;
-            }
+    @media (max-width: 850px) {
 
-            .hero-description {
-                margin-inline: auto;
+      .container {
+        width: min(
+          var(--max-width),
+          calc(100% - 34px)
+        );
+      }
 
-                font-size: 15px;
-            }
+      .header-inner {
+        min-height: 68px;
+      }
 
-            .hero-buttons {
-                justify-content: center;
-            }
+      .menu-toggle {
+        display: block;
+      }
 
-            .hero-note {
-                justify-content: center;
-            }
+      .main-nav {
+        position: absolute;
 
-            .hero-visual {
-                min-height: 390px;
-            }
+        top: 68px;
+        left: 0;
+        right: 0;
 
-            .hero-product {
-                max-width: 470px;
-            }
+        background: var(--white);
 
-            .badge-one {
-                left: 0;
-                top: 15%;
-            }
+        border-bottom: 1px solid var(--line);
 
-            .badge-two {
-                right: 0;
-                bottom: 13%;
-            }
+        display: flex;
 
+        flex-direction: column;
 
-            .intro,
-            .product-section,
-            .how-section,
-            .features-section,
-            .business-section,
-            .dashboard-section,
-            .about-section,
-            .faq-section {
-                padding: 80px 0;
-            }
+        align-items: stretch;
 
+        gap: 0;
 
-            .intro-grid,
-            .product-showcase,
-            .business-grid,
-            .dashboard-wrapper,
-            .about-grid {
-                grid-template-columns: 1fr;
+        max-height: 0;
 
-                gap: 45px;
-            }
+        overflow: hidden;
 
-            .intro-grid > div:last-child,
-            .about-grid > div:last-child {
-                padding-top: 0;
-            }
+        transition:
+          max-height .3s ease;
+      }
 
+      .main-nav.open {
+        max-height: 500px;
+      }
 
-            .showcase-card {
-                min-height: auto;
+      .main-nav a {
+        padding: 17px 20px;
 
-                padding: 20px;
-            }
+        border-bottom: 1px solid var(--line);
 
-            .showcase-content h3 {
-                font-size: 36px;
-            }
+        font-size: 14px;
+      }
 
+      .contact-link {
+        border: 0;
 
-            .steps {
-                grid-template-columns: 1fr;
-            }
+        padding: 17px 20px;
+      }
 
-            .step {
-                min-height: auto;
-            }
+      .hero-grid,
+      .product-grid,
+      .review-grid,
+      .business-layout,
+      .intro-grid {
+        grid-template-columns: 1fr;
 
-            .step-number {
-                margin-bottom: 35px;
-            }
+        gap: 45px;
+      }
 
+      .hero-grid {
+        min-height: auto;
+      }
 
-            .feature-grid {
-                grid-template-columns:
-                    repeat(2,1fr);
-            }
+      .hero-copy {
+        padding: 75px 0 20px;
+      }
 
+      .hero-visual {
+        min-height: 430px;
+      }
 
-            .business-list {
-                grid-template-columns: 1fr;
-            }
+      .hero-visual::before {
+        width: 330px;
+        height: 330px;
+      }
 
+      .product-section,
+      .intro,
+      .how,
+      .features,
+      .business,
+      .review-section,
+      .faq {
+        padding: 80px 0;
+      }
 
-            .dashboard-preview {
-                min-height: 330px;
-            }
+      .steps {
+        grid-template-columns: 1fr;
+      }
 
+      .step,
+      .step + .step {
+        padding: 27px 0;
 
-            .cta-section {
-                padding: 60px 0;
-            }
+        border-left: 0;
+      }
 
-            .cta-box {
-                padding: 60px 25px;
-            }
+      .features-heading {
+        grid-template-columns: 1fr;
 
-        }
+        gap: 20px;
+      }
 
+      .features-intro {
+        padding-top: 0;
+      }
 
-        @media (max-width: 520px) {
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
 
-            .container {
-                width:
-                    min(
-                        calc(100% - 28px),
-                        var(--container)
-                    );
-            }
+      .feature,
+      .feature:nth-child(even) {
+        padding: 25px 0;
 
-            .hero {
-                padding-top: 55px;
-            }
+        border-left: 0;
+      }
 
-            .eyebrow {
-                font-size: 9px;
-            }
+      .business-list {
+        grid-template-columns: 1fr;
+      }
 
-            .hero h1 {
-                font-size: 42px;
+      .business-item,
+      .business-item:nth-child(even) {
+        padding: 16px 0;
 
-                letter-spacing: -2.2px;
-            }
+        border-left: 0;
+      }
 
-            .hero-description {
-                font-size: 14px;
-            }
+      .cta-inner {
+        flex-direction: column;
 
-            .hero-buttons {
-                flex-direction: column;
-            }
+        align-items: flex-start;
+      }
 
-            .hero-buttons .btn {
-                width: 100%;
-            }
+      .footer-main {
+        grid-template-columns:
+          repeat(2, 1fr);
 
-            .hero-visual {
-                min-height: 310px;
-            }
+        gap: 45px 30px;
+      }
 
-            .hero-product {
-                padding: 10px;
-            }
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
 
-            .floating-badge {
-                padding: 9px 11px;
-            }
+    @media (max-width: 560px) {
 
-            .section-heading h2,
-            .intro h2,
-            .business-grid h2,
-            .dashboard-text h2,
-            .about-grid h2 {
-                font-size: 35px;
+      .hero h1 {
+        font-size: 43px;
+      }
 
-                letter-spacing: -1.7px;
-            }
+      .hero-description {
+        font-size: 15px;
+      }
 
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
+      .hero-actions {
+        align-items: stretch;
 
-            .feature-box {
-                min-height: auto;
-            }
+        flex-direction: column;
+      }
 
-            .dashboard-stats {
-                grid-template-columns: 1fr;
-            }
+      .button {
+        width: 100%;
+      }
 
-            .dashboard-stats strong {
-                font-size: 27px;
-            }
+      .hero-visual {
+        min-height: 350px;
+      }
 
-            .faq-list summary {
-                font-size: 14px;
-            }
+      .hero-visual::before {
+        width: 280px;
+        height: 280px;
+      }
 
-            .cta-box h2 {
-                font-size: 38px;
+      .product-image,
+      .review-visual {
+        padding: 20px;
+      }
 
-                letter-spacing: -1.8px;
-            }
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
 
-            .cta-buttons {
-                flex-direction: column;
-            }
+      .footer-bottom {
+        padding: 20px 0;
 
-            .cta-buttons .btn {
-                width: 100%;
-            }
+        align-items: flex-start;
 
-        }
+        flex-direction: column;
+      }
 
+      .footer-bottom-links {
+        flex-wrap: wrap;
+      }
+    }
 
-        @media (prefers-reduced-motion: reduce) {
+    @media (prefers-reduced-motion: reduce) {
 
-            html {
-                scroll-behavior: auto;
-            }
+      html {
+        scroll-behavior: auto;
+      }
 
-            *,
-            *::before,
-            *::after {
-                animation: none !important;
-                transition: none !important;
-            }
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
 
-        }
+    }
 
-    </style>
+  </style>
 </head>
-
 
 <body>
 
-    <!-- =========================================================
-         HEADER
-         File terpisah: header.html
-    ========================================================== -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
-    <div id="header"></div>
+  <header class="site-header">
 
+    <div class="container header-inner">
 
-    <main>
+      <a
+        href="/"
+        class="brand"
+        aria-label="Zenama Wave"
+      >
+        <span class="brand-mark"></span>
+        <span>Zenama Wave</span>
+      </a>
 
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
 
-        <!-- =====================================================
-             HERO
-        ====================================================== -->
+      <nav
+        class="main-nav"
+        id="mainNav"
+        aria-label="Navigasi utama"
+      >
 
-        <section class="hero">
+        <a href="#produk">
+          Produk
+        </a>
 
-            <div class="container hero-grid">
+        <a href="#cara-kerja">
+          Cara Kerja
+        </a>
 
-                <div class="hero-content">
+        <a href="#bisnis">
+          Untuk Bisnis
+        </a>
 
-                    <span class="eyebrow">
-                        QR + NFC • BUSINESS REVIEW SYSTEM
-                    </span>
+        <a
+          href="https://card.zenamagroup.com/reseller"
+          class="reseller-link"
+        >
+          Reseller
+        </a>
 
-                    <h1>
-                        Buat pelanggan lebih mudah
-                        <span>memberikan review.</span>
-                    </h1>
+        <a href="#faq">
+          FAQ
+        </a>
 
-                    <p class="hero-description">
-                        Zenama Wave membantu bisnis mengarahkan
-                        pelanggan langsung ke halaman review Google
-                        hanya dengan satu scan QR atau satu sentuhan NFC.
-                    </p>
+        <a
+          href="#kontak"
+          class="contact-link"
+        >
+          Hubungi Kami
+        </a>
 
-                    <div class="hero-buttons">
+      </nav>
 
-                        <a
-                            href="#cara-kerja"
-                            class="btn btn-primary"
-                        >
-                            Pelajari Cara Kerja
-                        </a>
+    </div>
 
-                        <a
-                            href="#produk"
-                            class="btn btn-secondary"
-                        >
-                            Lihat Produk
-                        </a>
-
-                    </div>
-
-                    <div class="hero-note">
-
-                        <span class="dot"></span>
-
-                        Cocok untuk restoran, cafe, hotel,
-                        salon, toko, jasa, dan berbagai jenis bisnis.
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-visual">
-
-                    <div class="hero-product">
-
-                        <img
-                            src="https://zenamagroup.com/assets/zenamacard1.png"
-                            alt="Zenama Wave Card 3D"
-                            loading="eager"
-                        >
-
-                    </div>
+  </header>
 
 
-                    <div class="floating-badge badge-one">
+  <main>
 
-                        <strong>QR</strong>
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
 
-                        <span>Scan</span>
+    <section class="hero">
 
-                    </div>
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <div class="eyebrow">
+            Digital Review Card
+          </div>
+
+          <h1>
+            Buat pelanggan lebih mudah
+            <em>memberikan review.</em>
+          </h1>
+
+          <p class="hero-description">
+            Zenama Wave menggabungkan QR Code dan NFC
+            dalam satu kartu review bisnis. Pelanggan cukup
+            scan atau tap untuk mengakses halaman review
+            bisnis Anda.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="#produk"
+              class="button button-dark"
+            >
+              Lihat Produk
+            </a>
+
+            <a
+              href="https://card.zenamagroup.com/reseller"
+              class="button button-light"
+            >
+              Menjadi Reseller
+            </a>
+
+          </div>
+
+          <p class="hero-note">
+            Dirancang untuk penggunaan di meja kasir,
+            meja restoran, resepsionis, counter, dan area
+            pelayanan pelanggan.
+          </p>
+
+        </div>
 
 
-                    <div class="floating-badge badge-two">
+        <div class="hero-visual">
 
-                        <strong>NFC</strong>
+          <img
+            class="hero-product"
+            src="https://zenamagroup.com/assets/zenamacard1.png"
+            alt="Zenama Wave kartu review Google dengan QR Code dan NFC"
+            loading="eager"
+            fetchpriority="high"
+          >
 
-                        <span>Tap</span>
+        </div>
 
-                    </div>
+      </div>
 
-                </div>
+    </section>
+
+
+    <!-- ===================================================
+         INTRO
+    ==================================================== -->
+
+    <section class="intro">
+
+      <div class="container intro-grid">
+
+        <div>
+
+          <div class="section-label">
+            Zenama Wave
+          </div>
+
+          <h2>
+            Review pelanggan,
+            dibuat lebih dekat.
+          </h2>
+
+        </div>
+
+        <div class="intro-copy">
+
+          <p>
+            Dalam bisnis, pengalaman pelanggan tidak berhenti
+            ketika transaksi selesai. Kesan setelah pelayanan
+            dapat menjadi bagian penting dari reputasi sebuah
+            bisnis di internet.
+          </p>
+
+          <p>
+            Zenama Wave memberikan cara sederhana untuk
+            menghubungkan pengalaman pelanggan di dunia nyata
+            dengan halaman review bisnis Anda secara digital.
+          </p>
+
+          <p>
+            Tidak perlu menjelaskan alamat URL yang panjang.
+            Letakkan kartu di tempat yang mudah terlihat,
+            kemudian pelanggan dapat scan QR Code atau
+            menggunakan NFC dari smartphone yang kompatibel.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         PRODUCT
+    ==================================================== -->
+
+    <section
+      class="product-section"
+      id="produk"
+    >
+
+      <div class="container product-grid">
+
+        <div class="product-image">
+
+          <img
+            src="https://zenamagroup.com/assets/zenamacard.png"
+            alt="Kartu Zenama Wave untuk Google Review menggunakan QR Code dan NFC"
+            loading="lazy"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <div class="section-label">
+            Satu kartu, dua cara
+          </div>
+
+          <h2>
+            QR & NFC dalam satu pengalaman.
+          </h2>
+
+          <p>
+            Zenama Wave dirancang agar pelanggan dapat
+            memilih cara yang paling nyaman untuk membuka
+            halaman review bisnis Anda.
+          </p>
+
+          <ul class="product-points">
+
+            <li>
+              <strong>QR Code</strong>
+              <span>
+                Dapat digunakan dengan kamera smartphone.
+              </span>
+            </li>
+
+            <li>
+              <strong>NFC</strong>
+              <span>
+                Cukup dekatkan perangkat yang mendukung NFC.
+              </span>
+            </li>
+
+            <li>
+              <strong>Dinamis</strong>
+              <span>
+                Setiap kartu dapat memiliki identitas dan
+                tautan tersendiri.
+              </span>
+            </li>
+
+            <li>
+              <strong>Praktis</strong>
+              <span>
+                Cocok diletakkan di meja, counter atau area
+                pelayanan.
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         HOW IT WORKS
+    ==================================================== -->
+
+    <section
+      class="how"
+      id="cara-kerja"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Cara Kerja
+          </div>
+
+          <h2>
+            Sesederhana pengalaman
+            yang ingin Anda berikan.
+          </h2>
+
+          <p>
+            Zenama Wave dibuat agar proses menuju review
+            online tidak terasa rumit bagi pelanggan.
+          </p>
+
+        </div>
+
+
+        <div class="steps">
+
+          <article class="step">
+
+            <div class="step-number">
+              01
+            </div>
+
+            <h3>
+              Pelanggan melihat kartu
+            </h3>
+
+            <p>
+              Letakkan Zenama Wave pada titik yang mudah
+              terlihat setelah pelanggan menerima pelayanan
+              atau menyelesaikan transaksi.
+            </p>
+
+          </article>
+
+
+          <article class="step">
+
+            <div class="step-number">
+              02
+            </div>
+
+            <h3>
+              Scan atau tap
+            </h3>
+
+            <p>
+              Pelanggan dapat menggunakan kamera untuk
+              melakukan scan QR Code atau mengetukkan
+              smartphone yang mendukung NFC.
+            </p>
+
+          </article>
+
+
+          <article class="step">
+
+            <div class="step-number">
+              03
+            </div>
+
+            <h3>
+              Buka halaman review
+            </h3>
+
+            <p>
+              Setelah tautan terbuka, pelanggan dapat
+              melanjutkan ke halaman review bisnis Anda
+              dan memberikan ulasan.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         FEATURES
+    ==================================================== -->
+
+    <section class="features">
+
+      <div class="container">
+
+        <div class="features-heading">
+
+          <div>
+
+            <div class="section-label">
+              Dibuat untuk bisnis
+            </div>
+
+            <h2>
+              Bukan sekadar QR Code yang ditempel.
+            </h2>
+
+          </div>
+
+          <p class="features-intro">
+            Zenama Wave menggabungkan media fisik,
+            akses digital, dan pengelolaan kartu dalam
+            satu ekosistem yang dibuat untuk kebutuhan
+            bisnis.
+          </p>
+
+        </div>
+
+
+        <div class="feature-list">
+
+          <article class="feature">
+
+            <h3>
+              QR Code
+            </h3>
+
+            <p>
+              Pelanggan dapat mengakses tautan menggunakan
+              kamera smartphone tanpa perangkat khusus.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <h3>
+              NFC
+            </h3>
+
+            <p>
+              Alternatif akses cepat bagi perangkat
+              smartphone yang mendukung NFC.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <h3>
+              Identitas Kartu
+            </h3>
+
+            <p>
+              Setiap kartu dapat memiliki identitas
+              tersendiri untuk kebutuhan pengelolaan.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <h3>
+              Dashboard
+            </h3>
+
+            <p>
+              Sistem dapat dikembangkan untuk membantu
+              pengelolaan kartu dan aktivitas pengguna.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         BUSINESS
+    ==================================================== -->
+
+    <section
+      class="business"
+      id="bisnis"
+    >
+
+      <div class="container business-layout">
+
+        <div>
+
+          <div class="section-label">
+            Untuk Bisnis
+          </div>
+
+          <h2>
+            Satu alat sederhana
+            untuk banyak jenis usaha.
+          </h2>
+
+        </div>
+
+
+        <div class="business-copy">
+
+          <p>
+            Kartu review dapat ditempatkan pada berbagai
+            titik interaksi pelanggan. Tujuannya sederhana:
+            membuat akses menuju review online lebih mudah
+            ditemukan setelah pelanggan mendapatkan
+            pengalaman dari bisnis Anda.
+          </p>
+
+          <div class="business-list">
+
+            <div class="business-item">
+              Restoran & Café
+            </div>
+
+            <div class="business-item">
+              Hotel & Penginapan
+            </div>
+
+            <div class="business-item">
+              Salon & Barbershop
+            </div>
+
+            <div class="business-item">
+              Toko & Retail
+            </div>
+
+            <div class="business-item">
+              Klinik & Praktik
+            </div>
+
+            <div class="business-item">
+              Jasa & Profesional
+            </div>
+
+            <div class="business-item">
+              Showroom & Dealer
+            </div>
+
+            <div class="business-item">
+              Bisnis Lokal
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         REVIEW / GOOGLE
+    ==================================================== -->
+
+    <section class="review-section">
+
+      <div class="container review-grid">
+
+        <div>
+
+          <div class="section-label">
+            Google Review
+          </div>
+
+          <h2>
+            Bawa momen setelah pelayanan
+            menuju ruang digital.
+          </h2>
+
+          <p>
+            Google Review menjadi salah satu tempat
+            pelanggan dapat membagikan pengalaman mereka
+            terhadap sebuah bisnis. Zenama Wave membantu
+            memperpendek langkah dari interaksi fisik
+            menuju halaman review tersebut.
+          </p>
+
+          <p class="review-note">
+            Zenama Wave tidak menjanjikan atau memaksa
+            pelanggan memberikan ulasan tertentu. Sistem
+            ini hanya mempermudah akses pelanggan ke
+            halaman review bisnis.
+          </p>
+
+        </div>
+
+
+        <div class="review-visual">
+
+          <img
+            src="https://zenamagroup.com/assets/zenamacard1.png"
+            alt="Contoh produk Zenama Wave kartu Google Review QR NFC"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         FAQ
+    ==================================================== -->
+
+    <section
+      class="faq"
+      id="faq"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            FAQ
+          </div>
+
+          <h2>
+            Pertanyaan yang sering ditanyakan.
+          </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Apa itu Zenama Wave?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                Zenama Wave adalah kartu review bisnis
+                berbasis QR Code dan NFC yang membantu
+                pelanggan mengakses halaman review bisnis
+                secara lebih mudah.
+
+              </div>
 
             </div>
 
-        </section>
+          </div>
 
 
-        <!-- =====================================================
-             INTRO
-        ====================================================== -->
+          <div class="faq-item">
 
-        <section class="intro">
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
 
-            <div class="container intro-grid">
+              <span>
+                Apakah Zenama Wave menggunakan QR Code?
+              </span>
 
-                <div>
+              <span class="faq-icon">
+                +
+              </span>
 
-                    <span class="section-label">
-                        ZENAMA WAVE
-                    </span>
+            </button>
 
-                    <h2>
-                        Satu kartu untuk pengalaman
-                        review yang lebih praktis.
-                    </h2>
+            <div class="faq-answer">
 
-                </div>
+              <div class="faq-answer-inner">
 
+                Ya. Setiap kartu dapat menggunakan QR Code
+                sebagai salah satu cara pelanggan membuka
+                tautan digital yang terhubung dengan kartu.
 
-                <div>
-
-                    <p>
-                        Review pelanggan menjadi salah satu bagian
-                        penting dalam perjalanan sebuah bisnis.
-                    </p>
-
-                    <p>
-                        Zenama Wave membuat proses tersebut menjadi
-                        lebih sederhana. Pelanggan cukup melakukan
-                        scan QR atau tap menggunakan smartphone
-                        yang mendukung NFC.
-                    </p>
-
-                </div>
+              </div>
 
             </div>
 
-        </section>
+          </div>
 
 
-        <!-- =====================================================
-             PRODUCT
-        ====================================================== -->
+          <div class="faq-item">
 
-        <section
-            class="product-section"
-            id="produk"
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Apakah Zenama Wave mendukung NFC?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                Ya. Zenama Wave dapat menggunakan NFC
+                sebagai alternatif QR Code bagi smartphone
+                yang mendukung fitur tersebut.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Bisnis apa yang cocok menggunakan kartu review?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                Kartu review dapat digunakan oleh berbagai
+                bisnis seperti restoran, café, hotel, salon,
+                toko, klinik, showroom, jasa profesional,
+                dan bisnis lokal lainnya.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Apakah pelanggan wajib memberikan review?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                Tidak. Zenama Wave hanya menyediakan akses
+                yang lebih mudah menuju halaman review.
+                Pelanggan tetap menentukan sendiri apakah
+                mereka ingin memberikan ulasan.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Apakah tersedia program reseller?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                Ya. Informasi mengenai program reseller
+                Zenama Wave tersedia di halaman reseller.
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         CTA
+    ==================================================== -->
+
+    <section
+      class="cta"
+      id="kontak"
+    >
+
+      <div class="container cta-inner">
+
+        <div>
+
+          <h2>
+            Jadikan pengalaman pelanggan
+            lebih mudah ditemukan secara online.
+          </h2>
+
+          <p>
+            Pelajari Zenama Wave atau hubungi Zenama Group
+            untuk kebutuhan produk dan kerja sama bisnis.
+          </p>
+
+        </div>
+
+        <div class="cta-action">
+
+          <a
+            href="mailto:company@zenamagroup.com"
+            class="button button-dark"
+          >
+            Hubungi Zenama Group
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <!-- Brand -->
+
+      <div class="footer-brand">
+
+        <a
+          href="/"
+          class="brand"
         >
 
-            <div class="container">
+          <span class="brand-mark"></span>
 
-                <div class="section-heading">
+          <span>
+            Zenama Wave
+          </span>
 
-                    <span class="section-label">
-                        THE PRODUCT
-                    </span>
+        </a>
 
-                    <h2>
-                        Dirancang untuk pengalaman
-                        yang sederhana.
-                    </h2>
+        <p class="footer-description">
+          Kartu review bisnis berbasis QR Code dan NFC
+          dari Zenama Group. Dirancang untuk membantu
+          bisnis memberikan akses yang lebih mudah menuju
+          pengalaman digital pelanggan.
+        </p>
 
-                    <p>
-                        Zenama Wave menggabungkan kartu fisik
-                        dengan sistem digital untuk menghubungkan
-                        pelanggan dengan halaman review bisnis.
-                    </p>
-
-                </div>
+      </div>
 
 
-                <div class="product-showcase">
+      <!-- Produk -->
+
+      <div>
+
+        <div class="footer-heading">
+          Produk
+        </div>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="#produk">
+              Zenama Wave
+            </a>
+          </li>
+
+          <li>
+            <a href="#cara-kerja">
+              Cara Kerja
+            </a>
+          </li>
+
+          <li>
+            <a href="#bisnis">
+              Untuk Bisnis
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
 
 
-                    <!-- KARTU 2D -->
+      <!-- Reseller -->
 
-                    <div class="showcase-card">
+      <div>
 
-                        <div class="card-image-wrapper">
+        <div class="footer-heading">
+          Kemitraan
+        </div>
 
-                            <img
-                                src="https://zenamagroup.com/assets/zenama-card.png"
-                                alt="Zenama Wave Card"
-                                loading="lazy"
-                            >
+        <ul class="footer-links">
 
-                        </div>
+          <li>
+            <a
+              href="https://card.zenamagroup.com/reseller"
+            >
+              Program Reseller
+            </a>
+          </li>
 
-                    </div>
+          <li>
+            <a
+              href="https://card.zenamagroup.com/reseller"
+            >
+              Informasi Reseller
+            </a>
+          </li>
 
+          <li>
+            <a
+              href="mailto:company@zenamagroup.com"
+            >
+              Kerja Sama
+            </a>
+          </li>
 
-                    <div class="showcase-content">
+        </ul>
 
-                        <span class="mini-label">
-                            PHYSICAL + DIGITAL
-                        </span>
-
-                        <h3>
-                            Menghubungkan meja bisnis
-                            dengan dunia digital.
-                        </h3>
-
-                        <p>
-                            Letakkan Zenama Wave di meja kasir,
-                            meja restoran, resepsionis, kamar hotel,
-                            counter, atau area lain yang sering
-                            dilihat pelanggan.
-                        </p>
-
-
-                        <div class="feature-list">
-
-
-                            <div class="feature-item">
-
-                                <div class="feature-number">
-                                    01
-                                </div>
-
-                                <div>
-
-                                    <strong>
-                                        QR Code
-                                    </strong>
-
-                                    <p>
-                                        Pelanggan dapat melakukan
-                                        scan menggunakan kamera
-                                        smartphone.
-                                    </p>
-
-                                </div>
-
-                            </div>
+      </div>
 
 
-                            <div class="feature-item">
+      <!-- Kontak -->
 
-                                <div class="feature-number">
-                                    02
-                                </div>
+      <div>
 
-                                <div>
+        <div class="footer-heading">
+          Kontak
+        </div>
 
-                                    <strong>
-                                        NFC
-                                    </strong>
+        <div class="footer-contact">
 
-                                    <p>
-                                        Smartphone yang mendukung
-                                        NFC dapat langsung melakukan
-                                        tap.
-                                    </p>
+          <p>
+            Zenama Group
+          </p>
 
-                                </div>
+          <p>
+            Email:
+            <br>
 
-                            </div>
+            <a
+              href="mailto:company@zenamagroup.com"
+            >
+              company@zenamagroup.com
+            </a>
+          </p>
 
+          <p style="margin-top: 13px;">
+            Website:
+            <br>
 
-                            <div class="feature-item">
+            <a
+              href="https://zenamagroup.com"
+              target="_blank"
+              rel="noopener"
+            >
+              zenamagroup.com
+            </a>
+          </p>
 
-                                <div class="feature-number">
-                                    03
-                                </div>
+        </div>
 
-                                <div>
+      </div>
 
-                                    <strong>
-                                        Dashboard
-                                    </strong>
-
-                                    <p>
-                                        Pantau aktivitas kartu melalui
-                                        dashboard Zenama Wave.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+    </div>
 
 
-        <!-- =====================================================
-             HOW IT WORKS
-        ====================================================== -->
+    <div class="container footer-bottom">
 
-        <section
-            class="how-section"
-            id="cara-kerja"
+      <div>
+        © <span id="year"></span> Zenama Group.
+        All rights reserved.
+      </div>
+
+      <div class="footer-bottom-links">
+
+        <a href="/">
+          Zenama Wave
+        </a>
+
+        <a
+          href="https://zenamagroup.com"
+          target="_blank"
+          rel="noopener"
         >
-
-            <div class="container">
-
-                <div class="section-heading center">
-
-                    <span class="section-label">
-                        HOW IT WORKS
-                    </span>
-
-                    <h2>
-                        Sesederhana itu.
-                    </h2>
-
-                    <p>
-                        Tidak membutuhkan proses yang rumit
-                        untuk digunakan oleh pelanggan.
-                    </p>
-
-                </div>
-
-
-                <div class="steps">
-
-
-                    <div class="step">
-
-                        <span class="step-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Pelanggan melihat kartu
-                        </h3>
-
-                        <p>
-                            Kartu Zenama Wave ditempatkan
-                            di area yang mudah terlihat pelanggan.
-                        </p>
-
-                    </div>
-
-
-                    <div class="step">
-
-                        <span class="step-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Scan atau Tap
-                        </h3>
-
-                        <p>
-                            Pelanggan cukup scan QR atau melakukan
-                            tap NFC menggunakan smartphone.
-                        </p>
-
-                    </div>
-
-
-                    <div class="step">
-
-                        <span class="step-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Berikan Review
-                        </h3>
-
-                        <p>
-                            Pelanggan diarahkan menuju halaman
-                            review Google milik bisnis.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             FEATURES
-        ====================================================== -->
-
-        <section class="features-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        FEATURES
-                    </span>
-
-                    <h2>
-                        Lebih dari sekadar QR Code.
-                    </h2>
-
-                    <p>
-                        Zenama Wave menggabungkan media fisik
-                        dengan sistem digital untuk membantu
-                        bisnis mengelola aktivitas kartu.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-grid">
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            QR
-                        </span>
-
-                        <h3>
-                            QR Code
-                        </h3>
-
-                        <p>
-                            Sediakan akses cepat menuju halaman
-                            review menggunakan QR Code.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            NFC
-                        </span>
-
-                        <h3>
-                            NFC Tap
-                        </h3>
-
-                        <p>
-                            Pengguna smartphone NFC dapat mengakses
-                            link tanpa perlu membuka kamera.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            ID
-                        </span>
-
-                        <h3>
-                            Kartu Individual
-                        </h3>
-
-                        <p>
-                            Setiap kartu memiliki ID dan PIN
-                            masing-masing untuk proses aktivasi.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            DB
-                        </span>
-
-                        <h3>
-                            Dashboard
-                        </h3>
-
-                        <p>
-                            Pemilik bisnis dapat melihat informasi
-                            dan aktivitas kartu melalui dashboard.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            GO
-                        </span>
-
-                        <h3>
-                            Google Review
-                        </h3>
-
-                        <p>
-                            Hubungkan kartu dengan halaman review
-                            Google milik bisnis.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-box">
-
-                        <span class="feature-icon">
-                            24
-                        </span>
-
-                        <h3>
-                            Sistem Online
-                        </h3>
-
-                        <p>
-                            Kartu terhubung dengan sistem online
-                            sehingga dapat digunakan kapan saja.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             FOR BUSINESS
-        ====================================================== -->
-
-        <section class="business-section">
-
-            <div class="container">
-
-                <div class="business-grid">
-
-
-                    <div>
-
-                        <span class="section-label">
-                            FOR BUSINESS
-                        </span>
-
-                        <h2>
-                            Dibuat untuk berbagai
-                            jenis bisnis.
-                        </h2>
-
-                        <p>
-                            Zenama Wave dapat ditempatkan di berbagai
-                            titik interaksi antara bisnis dan pelanggan.
-                        </p>
-
-                    </div>
-
-
-                    <div class="business-list">
-
-                        <div>
-                            <span>01</span>
-                            <strong>Restaurant & Cafe</strong>
-                        </div>
-
-                        <div>
-                            <span>02</span>
-                            <strong>Hotel & Villa</strong>
-                        </div>
-
-                        <div>
-                            <span>03</span>
-                            <strong>Salon & Barbershop</strong>
-                        </div>
-
-                        <div>
-                            <span>04</span>
-                            <strong>Retail & Store</strong>
-                        </div>
-
-                        <div>
-                            <span>05</span>
-                            <strong>Jasa & Service</strong>
-                        </div>
-
-                        <div>
-                            <span>06</span>
-                            <strong>Bisnis Lainnya</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             DASHBOARD
-        ====================================================== -->
-
-        <section class="dashboard-section">
-
-            <div class="container">
-
-                <div class="dashboard-wrapper">
-
-
-                    <div class="dashboard-text">
-
-                        <span class="section-label">
-                            ZENAMA WAVE DASHBOARD
-                        </span>
-
-                        <h2>
-                            Semua aktivitas kartu
-                            berada dalam satu tempat.
-                        </h2>
-
-                        <p>
-                            Sistem Zenama Wave menyediakan dashboard
-                            untuk membantu pemilik bisnis melihat
-                            informasi kartu dan aktivitas pengguna.
-                        </p>
-
-                        <a
-                            href="/dashboard.html"
-                            class="btn btn-primary"
-                        >
-                            Buka Dashboard
-                        </a>
-
-                    </div>
-
-
-                    <div class="dashboard-preview">
-
-                        <div class="dashboard-top">
-
-                            <span>
-                                Zenama Wave
-                            </span>
-
-                            <span>
-                                Dashboard
-                            </span>
-
-                        </div>
-
-
-                        <div class="dashboard-stats">
-
-                            <div>
-
-                                <small>
-                                    Total Scan
-                                </small>
-
-                                <strong>
-                                    1,284
-                                </strong>
-
-                            </div>
-
-
-                            <div>
-
-                                <small>
-                                    Total Tap
-                                </small>
-
-                                <strong>
-                                    742
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="dashboard-chart">
-
-                            <div class="chart-line"></div>
-
-                            <div class="chart-labels">
-
-                                <span>Mon</span>
-                                <span>Tue</span>
-                                <span>Wed</span>
-                                <span>Thu</span>
-                                <span>Fri</span>
-                                <span>Sat</span>
-                                <span>Sun</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             ABOUT
-        ====================================================== -->
-
-        <section
-            class="about-section"
-            id="about"
+          Zenama Group
+        </a>
+
+        <a
+          href="mailto:company@zenamagroup.com"
         >
+          Email
+        </a>
 
-            <div class="container about-grid">
+      </div>
 
+    </div>
 
-                <div>
+  </footer>
 
-                    <span class="section-label">
-                        ABOUT ZENAMA WAVE
-                    </span>
 
-                    <h2>
-                        Teknologi sederhana
-                        untuk kebutuhan bisnis nyata.
-                    </h2>
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
-                </div>
+  <script>
 
+    /* =====================================================
+       MOBILE MENU
+    ====================================================== */
 
-                <div>
+    const menuToggle =
+      document.getElementById("menuToggle");
 
-                    <p>
-                        Zenama Wave dikembangkan sebagai bagian
-                        dari ekosistem digital Zenama Group untuk
-                        membantu bisnis menghubungkan interaksi
-                        offline dengan layanan digital.
-                    </p>
+    const mainNav =
+      document.getElementById("mainNav");
 
-                    <p>
-                        Kami menggabungkan media fisik seperti QR
-                        dan NFC dengan sistem online agar pengalaman
-                        pelanggan menjadi lebih sederhana.
-                    </p>
+    menuToggle.addEventListener("click", () => {
 
-                </div>
+      const isOpen =
+        menuToggle.classList.toggle("active");
 
+      mainNav.classList.toggle("open");
 
-            </div>
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
 
-        </section>
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Tutup menu"
+          : "Buka menu"
+      );
 
+    });
 
-        <!-- =====================================================
-             FAQ
-        ====================================================== -->
 
-        <section
-            class="faq-section"
-            id="faq"
-        >
+    /* =====================================================
+       CLOSE MOBILE MENU AFTER CLICK
+    ====================================================== */
 
-            <div class="container">
+    mainNav
+      .querySelectorAll("a")
+      .forEach(link => {
 
-                <div class="section-heading center">
+        link.addEventListener("click", () => {
 
-                    <span class="section-label">
-                        FAQ
-                    </span>
+          menuToggle.classList.remove("active");
 
-                    <h2>
-                        Pertanyaan yang sering ditanyakan.
-                    </h2>
+          mainNav.classList.remove("open");
 
-                </div>
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
 
+          menuToggle.setAttribute(
+            "aria-label",
+            "Buka menu"
+          );
 
-                <div class="faq-list">
+        });
 
+      });
 
-                    <details>
 
-                        <summary>
-                            Apa itu Zenama Wave?
-                            <span>+</span>
-                        </summary>
+    /* =====================================================
+       FAQ
+    ====================================================== */
 
-                        <p>
-                            Zenama Wave adalah kartu fisik berbasis
-                            QR Code dan NFC yang dapat digunakan bisnis
-                            untuk mengarahkan pelanggan ke halaman
-                            review Google.
-                        </p>
+    const faqQuestions =
+      document.querySelectorAll(".faq-question");
 
-                    </details>
+    faqQuestions.forEach(question => {
 
+      question.addEventListener("click", () => {
 
-                    <details>
+        const item =
+          question.closest(".faq-item");
 
-                        <summary>
-                            Apakah pelanggan harus menginstal aplikasi?
-                            <span>+</span>
-                        </summary>
+        const currentlyActive =
+          item.classList.contains("active");
 
-                        <p>
-                            Tidak. Pelanggan dapat menggunakan browser
-                            smartphone untuk mengakses link melalui
-                            QR Code maupun NFC.
-                        </p>
+        document
+          .querySelectorAll(".faq-item")
+          .forEach(otherItem => {
 
-                    </details>
+            otherItem.classList.remove("active");
 
+            const otherButton =
+              otherItem.querySelector(
+                ".faq-question"
+              );
 
-                    <details>
+            otherButton.setAttribute(
+              "aria-expanded",
+              "false"
+            );
 
-                        <summary>
-                            Apakah kartu bisa menggunakan QR dan NFC?
-                            <span>+</span>
-                        </summary>
+          });
 
-                        <p>
-                            Ya. Satu kartu Zenama Wave dapat menyediakan
-                            akses melalui QR Code dan NFC.
-                        </p>
+        if (!currentlyActive) {
 
-                    </details>
+          item.classList.add("active");
 
-
-                    <details>
-
-                        <summary>
-                            Apakah setiap kartu memiliki ID sendiri?
-                            <span>+</span>
-                        </summary>
-
-                        <p>
-                            Ya. Setiap kartu memiliki ID seri dan PIN
-                            yang digunakan pada proses aktivasi.
-                        </p>
-
-                    </details>
-
-
-                    <details>
-
-                        <summary>
-                            Apakah bisa digunakan untuk bisnis saya?
-                            <span>+</span>
-                        </summary>
-
-                        <p>
-                            Zenama Wave dapat digunakan untuk berbagai
-                            jenis bisnis yang ingin memberikan akses
-                            review digital kepada pelanggan.
-                        </p>
-
-                    </details>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             CTA
-        ====================================================== -->
-
-        <section class="cta-section">
-
-            <div class="container">
-
-                <div class="cta-box">
-
-                    <span class="section-label">
-                        START WITH ZENAMA WAVE
-                    </span>
-
-                    <h2>
-                        Jadikan pengalaman pelanggan
-                        lebih sederhana.
-                    </h2>
-
-                    <p>
-                        Hubungkan bisnis Anda dengan pengalaman
-                        review digital melalui QR dan NFC.
-                    </p>
-
-
-                    <div class="cta-buttons">
-
-                        <a
-                            href="#produk"
-                            class="btn btn-light"
-                        >
-                            Lihat Produk
-                        </a>
-
-                        <a
-                            href="mailto:company@zenamagroup.com"
-                            class="btn btn-outline-light"
-                        >
-                            Hubungi Kami
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- =========================================================
-         FOOTER
-         File terpisah: footer.html
-    ========================================================== -->
-
-    <div id="footer"></div>
-
-
-    <!-- =========================================================
-         LOAD HEADER & FOOTER
-    ========================================================== -->
-
-    <script>
-
-        async function loadComponent(
-            elementId,
-            file
-        ) {
-
-            try {
-
-                const response =
-                    await fetch(file);
-
-                if (!response.ok) {
-                    throw new Error(
-                        "Gagal memuat " + file
-                    );
-                }
-
-                const html =
-                    await response.text();
-
-                document.getElementById(
-                    elementId
-                ).innerHTML = html;
-
-            } catch (error) {
-
-                console.error(error);
-
-            }
+          question.setAttribute(
+            "aria-expanded",
+            "true"
+          );
 
         }
 
+      });
 
-        loadComponent(
-            "header",
-            "header.html"
-        );
+    });
 
 
-        loadComponent(
-            "footer",
-            "footer.html"
-        );
+    /* =====================================================
+       CURRENT YEAR
+    ====================================================== */
 
-    </script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
 
 </body>
 </html>
