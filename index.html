@@ -7,43 +7,38 @@
     <title>Zenama Wave — Kartu Review QR & NFC untuk Bisnis</title>
 
     <meta name="description"
-        content="Zenama Wave adalah kartu QR & NFC untuk membantu bisnis mendapatkan review Google dengan cara yang lebih mudah, cepat, dan modern.">
+        content="Zenama Wave adalah kartu QR & NFC untuk membantu bisnis memberikan akses review Google dengan cara yang mudah, cepat, dan modern.">
 
     <meta name="theme-color" content="#ffffff">
 
     <style>
+
         /* =========================================================
            ZENAMA WAVE
-           MAIN WEBSITE STYLES
+           INDEX PAGE ONLY
+           Header & Footer dipanggil dari file terpisah
         ========================================================= */
 
         :root {
             --blue: #1769ff;
-            --blue-dark: #0b45bd;
+            --blue-dark: #0d4dcc;
             --blue-soft: #eef5ff;
+
             --mint: #20d8b0;
 
-            --black: #0c1118;
-            --dark: #151b24;
+            --black: #0b1118;
             --text: #252c36;
-            --muted: #6c7480;
+            --muted: #6d7682;
 
             --white: #ffffff;
-            --line: #e7ebf0;
             --surface: #f7f9fc;
+            --line: #e7ebf0;
 
-            --radius-sm: 12px;
-            --radius-md: 20px;
+            --radius: 20px;
             --radius-lg: 30px;
 
-            --shadow-sm:
-                0 8px 30px rgba(16, 31, 55, .06);
-
-            --shadow-md:
-                0 20px 60px rgba(16, 31, 55, .10);
-
-            --shadow-lg:
-                0 30px 90px rgba(16, 31, 55, .14);
+            --shadow:
+                0 20px 60px rgba(12, 31, 55, .09);
 
             --container: 1180px;
         }
@@ -54,9 +49,9 @@
         ========================================================= */
 
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -74,8 +69,9 @@
                 Arial,
                 sans-serif;
 
-            background: var(--white);
             color: var(--text);
+            background: var(--white);
+
             line-height: 1.6;
 
             -webkit-font-smoothing: antialiased;
@@ -92,10 +88,6 @@
             text-decoration: none;
         }
 
-        button {
-            font: inherit;
-        }
-
         .container {
             width: min(
                 calc(100% - 48px),
@@ -107,178 +99,55 @@
 
 
         /* =========================================================
-           HEADER
+           TEXT SYSTEM
         ========================================================= */
 
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        .section-label {
+            display: inline-block;
 
-            background: rgba(255, 255, 255, .88);
-            border-bottom: 1px solid rgba(231, 235, 240, .8);
+            color: var(--blue);
 
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-        }
-
-        .header-container {
-            width: min(
-                calc(100% - 48px),
-                var(--container)
-            );
-
-            min-height: 76px;
-
-            margin-inline: auto;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            gap: 30px;
-        }
-
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-
-            flex-shrink: 0;
-        }
-
-        .brand-mark {
-            width: 38px;
-            height: 38px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 11px;
-
-            color: #fff;
-            background: var(--blue);
-
-            font-size: 17px;
+            font-size: 11px;
             font-weight: 800;
 
-            box-shadow:
-                0 8px 20px rgba(23, 105, 255, .22);
+            letter-spacing: .14em;
+            text-transform: uppercase;
         }
 
-        .brand-text {
-            display: flex;
-            align-items: baseline;
-            gap: 5px;
+        .section-heading {
+            max-width: 760px;
+            margin-bottom: 55px;
         }
 
-        .brand-text strong {
-            font-size: 17px;
+        .section-heading.center {
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-heading h2 {
+            margin-top: 15px;
+
             color: var(--black);
-            letter-spacing: -.5px;
+
+            font-size: clamp(36px, 4.5vw, 55px);
+            line-height: 1.07;
+
+            letter-spacing: -2.5px;
         }
 
-        .brand-text span {
-            font-size: 17px;
-            color: var(--blue);
-            font-weight: 700;
+        .section-heading p {
+            max-width: 650px;
+
+            margin-top: 18px;
+
+            color: var(--muted);
+
+            font-size: 16px;
+            line-height: 1.8;
         }
 
-        .main-nav {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .main-nav a {
-            position: relative;
-
-            color: #59616d;
-
-            font-size: 14px;
-            font-weight: 600;
-
-            transition:
-                color .2s ease;
-        }
-
-        .main-nav a::after {
-            content: "";
-
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-
-            width: 0;
-            height: 2px;
-
-            border-radius: 10px;
-            background: var(--blue);
-
-            transition: width .2s ease;
-        }
-
-        .main-nav a:hover {
-            color: var(--blue);
-        }
-
-        .main-nav a:hover::after {
-            width: 100%;
-        }
-
-        .header-action {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .header-login {
-            padding: 10px 15px;
-
-            color: var(--text);
-
-            font-size: 14px;
-            font-weight: 650;
-
-            transition: color .2s ease;
-        }
-
-        .header-login:hover {
-            color: var(--blue);
-        }
-
-        .header-button {
-            padding: 11px 18px;
-
-            color: #fff;
-            background: var(--black);
-
-            border-radius: 10px;
-
-            font-size: 13px;
-            font-weight: 700;
-
-            transition:
-                transform .2s ease,
-                background .2s ease;
-        }
-
-        .header-button:hover {
-            background: var(--blue);
-            transform: translateY(-2px);
-        }
-
-        .mobile-menu {
-            display: none;
-
-            width: 40px;
-            height: 40px;
-
-            border: 1px solid var(--line);
-            border-radius: 10px;
-
-            background: #fff;
-            cursor: pointer;
+        .section-heading.center p {
+            margin-inline: auto;
         }
 
 
@@ -302,8 +171,8 @@
 
             transition:
                 transform .2s ease,
-                box-shadow .2s ease,
                 background .2s ease,
+                box-shadow .2s ease,
                 border-color .2s ease;
         }
 
@@ -316,14 +185,14 @@
             background: var(--blue);
 
             box-shadow:
-                0 12px 30px rgba(23, 105, 255, .20);
+                0 12px 30px rgba(23,105,255,.20);
         }
 
         .btn-primary:hover {
             background: var(--blue-dark);
 
             box-shadow:
-                0 16px 35px rgba(23, 105, 255, .26);
+                0 16px 35px rgba(23,105,255,.25);
         }
 
         .btn-secondary {
@@ -334,8 +203,10 @@
         }
 
         .btn-secondary:hover {
-            border-color: #cbd4df;
-            box-shadow: var(--shadow-sm);
+            border-color: #ccd5df;
+
+            box-shadow:
+                0 10px 30px rgba(16,31,55,.07);
         }
 
         .btn-light {
@@ -346,12 +217,15 @@
         .btn-outline-light {
             color: #fff;
             background: transparent;
-            border: 1px solid rgba(255,255,255,.30);
+
+            border: 1px solid rgba(255,255,255,.3);
         }
 
         .btn-outline-light:hover {
-            background: rgba(255,255,255,.10);
-            border-color: rgba(255,255,255,.55);
+            background: rgba(255,255,255,.08);
+
+            border-color:
+                rgba(255,255,255,.55);
         }
 
 
@@ -363,23 +237,18 @@
             position: relative;
             overflow: hidden;
 
-            min-height: 680px;
-
-            display: flex;
-            align-items: center;
-
-            padding: 100px 0 110px;
+            padding: 105px 0 115px;
 
             background:
                 radial-gradient(
                     circle at 80% 45%,
-                    rgba(23,105,255,.075),
+                    rgba(23,105,255,.08),
                     transparent 34%
                 ),
                 #fff;
         }
 
-        .hero::before {
+        .hero::after {
             content: "";
 
             position: absolute;
@@ -387,7 +256,7 @@
             width: 520px;
             height: 520px;
 
-            right: -240px;
+            right: -250px;
             top: 30px;
 
             border-radius: 50%;
@@ -395,7 +264,7 @@
             background:
                 radial-gradient(
                     circle,
-                    rgba(32,216,176,.07),
+                    rgba(32,216,176,.08),
                     transparent 65%
                 );
 
@@ -407,55 +276,50 @@
             z-index: 1;
 
             display: grid;
-            grid-template-columns: 1fr 1fr;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                minmax(0, 1fr);
 
             align-items: center;
 
-            gap: 60px;
+            gap: 65px;
         }
 
         .hero-content {
-            max-width: 610px;
-        }
-
-        .eyebrow,
-        .section-label,
-        .mini-label {
-            display: inline-block;
-
-            color: var(--blue);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            letter-spacing: .14em;
-            text-transform: uppercase;
+            max-width: 620px;
         }
 
         .eyebrow {
+            display: inline-block;
+
             margin-bottom: 20px;
 
-            padding: 7px 11px;
+            padding: 7px 12px;
 
-            border: 1px solid #dbe8ff;
+            color: var(--blue);
+
+            background: #f5f9ff;
+
+            border: 1px solid #dce8ff;
             border-radius: 999px;
 
-            background: #f6f9ff;
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: .13em;
         }
 
         .hero h1 {
-            max-width: 650px;
-
             color: var(--black);
 
-            font-size: clamp(
-                46px,
-                5.2vw,
-                72px
-            );
+            font-size:
+                clamp(46px, 5.3vw, 72px);
 
             line-height: 1.02;
+
             letter-spacing: -3.5px;
+
             font-weight: 800;
         }
 
@@ -472,12 +336,14 @@
             color: var(--muted);
 
             font-size: 17px;
+
             line-height: 1.75;
         }
 
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
+
             gap: 11px;
 
             margin-top: 32px;
@@ -488,12 +354,11 @@
             align-items: center;
             gap: 9px;
 
-            margin-top: 25px;
+            margin-top: 24px;
 
-            color: #7b838e;
+            color: #7a838e;
 
             font-size: 12px;
-            line-height: 1.5;
         }
 
         .dot {
@@ -507,12 +372,12 @@
             background: var(--mint);
 
             box-shadow:
-                0 0 0 5px rgba(32,216,176,.10);
+                0 0 0 5px rgba(32,216,176,.1);
         }
 
 
         /* =========================================================
-           HERO PRODUCT 3D
+           HERO PRODUCT
         ========================================================= */
 
         .hero-visual {
@@ -528,10 +393,7 @@
         .hero-product {
             position: relative;
 
-            width: min(
-                100%,
-                540px
-            );
+            width: min(100%, 540px);
 
             padding: 20px;
 
@@ -548,15 +410,16 @@
 
             position: absolute;
 
-            width: 70%;
-            height: 35%;
+            width: 68%;
+            height: 25%;
 
-            left: 15%;
+            left: 16%;
             bottom: 8%;
 
             border-radius: 50%;
 
-            background: rgba(13, 36, 72, .13);
+            background:
+                rgba(10,35,70,.13);
 
             filter: blur(35px);
 
@@ -571,7 +434,7 @@
 
             filter:
                 drop-shadow(
-                    0 28px 30px rgba(12, 28, 52, .14)
+                    0 28px 30px rgba(12,28,52,.15)
                 );
         }
 
@@ -590,7 +453,7 @@
 
 
         /* =========================================================
-           FLOATING BADGES
+           HERO BADGES
         ========================================================= */
 
         .floating-badge {
@@ -602,18 +465,17 @@
 
             padding: 11px 14px;
 
-            background: rgba(255,255,255,.94);
+            background:
+                rgba(255,255,255,.95);
 
-            border: 1px solid rgba(225,231,238,.9);
+            border: 1px solid #e2e8ef;
 
             border-radius: 13px;
 
             box-shadow:
-                0 15px 40px rgba(17,32,55,.10);
+                0 15px 40px rgba(17,32,55,.1);
 
             backdrop-filter: blur(12px);
-
-            z-index: 3;
         }
 
         .floating-badge strong {
@@ -624,15 +486,15 @@
         }
 
         .floating-badge span {
-            color: #66707c;
+            color: #68727e;
 
             font-size: 11px;
             font-weight: 600;
         }
 
         .badge-one {
-            top: 17%;
             left: 2%;
+            top: 17%;
         }
 
         .badge-two {
@@ -646,17 +508,18 @@
         ========================================================= */
 
         .intro {
-            padding: 100px 0;
+            padding: 105px 0;
 
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
-
-            background: #fff;
         }
 
         .intro-grid {
             display: grid;
-            grid-template-columns: .95fr 1fr;
+
+            grid-template-columns:
+                .95fr
+                1fr;
 
             gap: 100px;
         }
@@ -668,13 +531,16 @@
 
             color: var(--black);
 
-            font-size: clamp(34px,4vw,53px);
+            font-size:
+                clamp(34px,4vw,53px);
+
             line-height: 1.08;
+
             letter-spacing: -2.2px;
         }
 
         .intro-grid > div:last-child {
-            padding-top: 12px;
+            padding-top: 10px;
         }
 
         .intro p {
@@ -685,51 +551,8 @@
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
-        }
-
-
-        /* =========================================================
-           SECTION HEADING
-        ========================================================= */
-
-        .section-heading {
-            max-width: 760px;
-
-            margin-bottom: 55px;
-        }
-
-        .section-heading.center {
-            margin-left: auto;
-            margin-right: auto;
-
-            text-align: center;
-        }
-
-        .section-heading h2 {
-            margin-top: 15px;
-
-            color: var(--black);
-
-            font-size: clamp(35px,4.5vw,55px);
-            line-height: 1.08;
-            letter-spacing: -2.5px;
-        }
-
-        .section-heading p {
-            max-width: 650px;
-
-            margin-top: 18px;
-
-            color: var(--muted);
-
-            font-size: 16px;
-            line-height: 1.75;
-        }
-
-        .section-heading.center p {
-            margin-left: auto;
-            margin-right: auto;
         }
 
 
@@ -747,8 +570,8 @@
             display: grid;
 
             grid-template-columns:
-                minmax(0, 1fr)
-                minmax(0, 1fr);
+                minmax(0,1fr)
+                minmax(0,1fr);
 
             align-items: center;
 
@@ -769,7 +592,8 @@
             border: 1px solid var(--line);
             border-radius: var(--radius-lg);
 
-            box-shadow: var(--shadow-md);
+            box-shadow:
+                0 20px 60px rgba(16,31,55,.09);
         }
 
         .card-image-wrapper {
@@ -787,16 +611,18 @@
             object-fit: contain;
 
             transition:
-                transform .5s ease,
-                filter .5s ease;
+                transform .45s ease,
+                filter .45s ease;
         }
 
         .showcase-card:hover img {
-            transform: translateY(-8px) scale(1.015);
+            transform:
+                translateY(-7px)
+                scale(1.015);
 
             filter:
                 drop-shadow(
-                    0 22px 25px rgba(13,36,72,.12)
+                    0 20px 25px rgba(13,36,72,.12)
                 );
         }
 
@@ -805,16 +631,26 @@
         }
 
         .mini-label {
-            margin-bottom: 16px;
+            display: inline-block;
+
+            margin-bottom: 15px;
 
             color: var(--blue);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: .13em;
         }
 
         .showcase-content h3 {
             color: var(--black);
 
-            font-size: clamp(30px,3.5vw,44px);
+            font-size:
+                clamp(30px,3.5vw,44px);
+
             line-height: 1.12;
+
             letter-spacing: -1.7px;
         }
 
@@ -824,6 +660,7 @@
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
         }
 
@@ -836,6 +673,7 @@
 
         .feature-item {
             display: grid;
+
             grid-template-columns: 40px 1fr;
 
             gap: 16px;
@@ -864,6 +702,7 @@
             color: var(--muted);
 
             font-size: 13px;
+
             line-height: 1.65;
         }
 
@@ -874,42 +713,36 @@
 
         .how-section {
             padding: 120px 0;
-
-            background: #fff;
         }
 
         .steps {
             display: grid;
+
             grid-template-columns:
-                repeat(3, 1fr);
+                repeat(3,1fr);
 
             gap: 20px;
         }
 
         .step {
-            position: relative;
-
             min-height: 260px;
 
             padding: 32px;
 
-            border: 1px solid var(--line);
-            border-radius: var(--radius-md);
-
             background: #fff;
+
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
 
             transition:
                 transform .25s ease,
-                box-shadow .25s ease,
-                border-color .25s ease;
+                box-shadow .25s ease;
         }
 
         .step:hover {
             transform: translateY(-6px);
 
-            border-color: #d5e2f7;
-
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow);
         }
 
         .step-number {
@@ -925,9 +758,9 @@
 
             color: var(--blue);
 
-            border-radius: 11px;
-
             background: var(--blue-soft);
+
+            border-radius: 11px;
 
             font-size: 11px;
             font-weight: 800;
@@ -937,6 +770,7 @@
             color: var(--black);
 
             font-size: 20px;
+
             letter-spacing: -.4px;
         }
 
@@ -946,6 +780,7 @@
             color: var(--muted);
 
             font-size: 14px;
+
             line-height: 1.7;
         }
 
@@ -964,7 +799,7 @@
             display: grid;
 
             grid-template-columns:
-                repeat(3, 1fr);
+                repeat(3,1fr);
 
             gap: 16px;
         }
@@ -977,7 +812,7 @@
             background: #fff;
 
             border: 1px solid var(--line);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius);
 
             transition:
                 transform .25s ease,
@@ -986,7 +821,9 @@
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-sm);
+
+            box-shadow:
+                0 12px 35px rgba(16,31,55,.07);
         }
 
         .feature-icon {
@@ -1016,7 +853,6 @@
             color: var(--black);
 
             font-size: 19px;
-            letter-spacing: -.4px;
         }
 
         .feature-box p {
@@ -1025,6 +861,7 @@
             color: var(--muted);
 
             font-size: 14px;
+
             line-height: 1.7;
         }
 
@@ -1035,8 +872,6 @@
 
         .business-section {
             padding: 120px 0;
-
-            background: #fff;
         }
 
         .business-grid {
@@ -1047,8 +882,6 @@
                 1.15fr;
 
             gap: 100px;
-
-            align-items: start;
         }
 
         .business-grid h2 {
@@ -1058,8 +891,11 @@
 
             color: var(--black);
 
-            font-size: clamp(35px,4vw,52px);
+            font-size:
+                clamp(35px,4vw,52px);
+
             line-height: 1.08;
+
             letter-spacing: -2.3px;
         }
 
@@ -1071,6 +907,7 @@
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
         }
 
@@ -1078,7 +915,7 @@
             display: grid;
 
             grid-template-columns:
-                repeat(2, 1fr);
+                repeat(2,1fr);
 
             border-top: 1px solid var(--line);
         }
@@ -1086,11 +923,10 @@
         .business-list > div {
             display: flex;
             align-items: center;
+
             gap: 15px;
 
             min-height: 82px;
-
-            padding: 0 5px;
 
             border-bottom: 1px solid var(--line);
         }
@@ -1138,21 +974,24 @@
 
             color: var(--black);
 
-            font-size: clamp(35px,4vw,52px);
+            font-size:
+                clamp(35px,4vw,52px);
+
             line-height: 1.08;
+
             letter-spacing: -2.3px;
         }
 
         .dashboard-text > p {
             max-width: 510px;
 
-            margin-top: 20px;
-
-            margin-bottom: 28px;
+            margin:
+                20px 0 28px;
 
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
         }
 
@@ -1166,7 +1005,7 @@
             border: 1px solid var(--line);
             border-radius: var(--radius-lg);
 
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow);
         }
 
         .dashboard-top {
@@ -1193,7 +1032,9 @@
 
         .dashboard-stats {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+
+            grid-template-columns:
+                repeat(2,1fr);
 
             gap: 15px;
 
@@ -1224,8 +1065,8 @@
             color: var(--black);
 
             font-size: 30px;
+
             line-height: 1;
-            letter-spacing: -1px;
         }
 
         .dashboard-chart {
@@ -1270,7 +1111,8 @@
 
             height: 80px;
 
-            border-top: 3px solid var(--blue);
+            border-top:
+                3px solid var(--blue);
 
             transform:
                 skewY(-10deg)
@@ -1303,8 +1145,6 @@
 
         .about-section {
             padding: 120px 0;
-
-            background: #fff;
         }
 
         .about-grid {
@@ -1324,8 +1164,11 @@
 
             color: var(--black);
 
-            font-size: clamp(35px,4vw,52px);
+            font-size:
+                clamp(35px,4vw,52px);
+
             line-height: 1.08;
+
             letter-spacing: -2.3px;
         }
 
@@ -1341,6 +1184,7 @@
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
         }
 
@@ -1358,7 +1202,7 @@
         .faq-list {
             max-width: 800px;
 
-            margin: 0 auto;
+            margin-inline: auto;
         }
 
         .faq-list details {
@@ -1394,24 +1238,26 @@
             color: var(--blue);
 
             font-size: 22px;
-            font-weight: 400;
 
             transition:
                 transform .2s ease;
         }
 
-        .faq-list details[open] summary span {
+        .faq-list details[open]
+        summary span {
             transform: rotate(45deg);
         }
 
         .faq-list details p {
             max-width: 700px;
 
-            padding: 0 40px 24px 0;
+            padding:
+                0 40px 24px 0;
 
             color: var(--muted);
 
             font-size: 14px;
+
             line-height: 1.75;
         }
 
@@ -1422,8 +1268,6 @@
 
         .cta-section {
             padding: 90px 0;
-
-            background: #fff;
         }
 
         .cta-box {
@@ -1439,7 +1283,7 @@
             background:
                 radial-gradient(
                     circle at 80% 20%,
-                    rgba(32,216,176,.17),
+                    rgba(32,216,176,.16),
                     transparent 30%
                 ),
                 linear-gradient(
@@ -1448,7 +1292,8 @@
                     #121c2a
                 );
 
-            box-shadow: var(--shadow-lg);
+            box-shadow:
+                0 30px 90px rgba(12,28,52,.14);
         }
 
         .cta-box::before {
@@ -1482,12 +1327,16 @@
         .cta-box h2 {
             max-width: 760px;
 
-            margin: 15px auto 0;
+            margin:
+                15px auto 0;
 
             color: #fff;
 
-            font-size: clamp(36px,5vw,60px);
+            font-size:
+                clamp(36px,5vw,60px);
+
             line-height: 1.05;
+
             letter-spacing: -2.5px;
         }
 
@@ -1504,6 +1353,7 @@
         .cta-buttons {
             display: flex;
             justify-content: center;
+
             flex-wrap: wrap;
 
             gap: 10px;
@@ -1513,131 +1363,21 @@
 
 
         /* =========================================================
-           FOOTER
-        ========================================================= */
-
-        .site-footer {
-            padding: 70px 0 25px;
-
-            color: #a0aab7;
-
-            background: #0b1017;
-        }
-
-        .footer-grid {
-            display: grid;
-
-            grid-template-columns:
-                1.5fr
-                .8fr
-                .8fr
-                1fr;
-
-            gap: 50px;
-
-            padding-bottom: 55px;
-
-            border-bottom: 1px solid rgba(255,255,255,.08);
-        }
-
-        .footer-logo .brand-text strong {
-            color: #fff;
-        }
-
-        .footer-logo .brand-text span {
-            color: #5d9aff;
-        }
-
-        .footer-brand > p {
-            max-width: 350px;
-
-            margin-top: 20px;
-
-            color: #8d98a6;
-
-            font-size: 13px;
-            line-height: 1.75;
-        }
-
-        .footer-column {
-            display: flex;
-            flex-direction: column;
-
-            gap: 11px;
-        }
-
-        .footer-column h4 {
-            margin-bottom: 8px;
-
-            color: #fff;
-
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: .1em;
-        }
-
-        .footer-column a {
-            color: #8d98a6;
-
-            font-size: 13px;
-
-            transition: color .2s ease;
-        }
-
-        .footer-column a:hover {
-            color: #fff;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            gap: 20px;
-
-            padding-top: 22px;
-
-            color: #687482;
-
-            font-size: 11px;
-        }
-
-
-        /* =========================================================
-           MOBILE
+           RESPONSIVE
         ========================================================= */
 
         @media (max-width: 1000px) {
 
-            .main-nav {
-                gap: 18px;
-            }
-
-            .header-login {
-                display: none;
-            }
-
             .hero-grid {
-                gap: 30px;
+                gap: 35px;
             }
 
-            .product-showcase,
-            .dashboard-wrapper,
-            .business-grid,
             .intro-grid,
+            .product-showcase,
+            .business-grid,
+            .dashboard-wrapper,
             .about-grid {
                 gap: 55px;
-            }
-
-            .footer-grid {
-                grid-template-columns:
-                    1.4fr
-                    1fr
-                    1fr;
-            }
-
-            .footer-brand {
-                grid-column: 1 / -1;
             }
 
         }
@@ -1645,34 +1385,17 @@
 
         @media (max-width: 780px) {
 
-            .container,
-            .header-container {
-                width: min(
-                    calc(100% - 32px),
-                    var(--container)
-                );
+            .container {
+                width:
+                    min(
+                        calc(100% - 32px),
+                        var(--container)
+                    );
             }
-
-
-            /* Header */
-
-            .main-nav,
-            .header-action {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: grid;
-                place-items: center;
-            }
-
-
-            /* Hero */
 
             .hero {
-                min-height: auto;
-
-                padding: 70px 0 80px;
+                padding:
+                    70px 0 80px;
             }
 
             .hero-grid {
@@ -1682,16 +1405,16 @@
             }
 
             .hero-content {
-                text-align: center;
+                max-width: 650px;
+
                 margin-inline: auto;
+
+                text-align: center;
             }
 
             .hero h1 {
-                font-size: clamp(
-                    43px,
-                    13vw,
-                    60px
-                );
+                font-size:
+                    clamp(43px,13vw,60px);
 
                 letter-spacing: -2.7px;
             }
@@ -1729,8 +1452,6 @@
             }
 
 
-            /* Intro */
-
             .intro,
             .product-section,
             .how-section,
@@ -1741,6 +1462,7 @@
             .faq-section {
                 padding: 80px 0;
             }
+
 
             .intro-grid,
             .product-showcase,
@@ -1758,8 +1480,6 @@
             }
 
 
-            /* Product */
-
             .showcase-card {
                 min-height: auto;
 
@@ -1770,8 +1490,6 @@
                 font-size: 36px;
             }
 
-
-            /* Steps */
 
             .steps {
                 grid-template-columns: 1fr;
@@ -1786,29 +1504,21 @@
             }
 
 
-            /* Features */
-
             .feature-grid {
                 grid-template-columns:
-                    repeat(2, 1fr);
+                    repeat(2,1fr);
             }
 
-
-            /* Business */
 
             .business-list {
                 grid-template-columns: 1fr;
             }
 
 
-            /* Dashboard */
-
             .dashboard-preview {
                 min-height: 330px;
             }
 
-
-            /* CTA */
 
             .cta-section {
                 padding: 60px 0;
@@ -1818,33 +1528,18 @@
                 padding: 60px 25px;
             }
 
-
-            /* Footer */
-
-            .footer-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
-
-                gap: 40px 25px;
-            }
-
-            .footer-brand {
-                grid-column: 1 / -1;
-            }
-
         }
 
 
         @media (max-width: 520px) {
 
-            .container,
-            .header-container {
-                width: min(
-                    calc(100% - 28px),
-                    var(--container)
-                );
+            .container {
+                width:
+                    min(
+                        calc(100% - 28px),
+                        var(--container)
+                    );
             }
-
 
             .hero {
                 padding-top: 55px;
@@ -1884,7 +1579,6 @@
                 padding: 9px 11px;
             }
 
-
             .section-heading h2,
             .intro h2,
             .business-grid h2,
@@ -1895,21 +1589,13 @@
                 letter-spacing: -1.7px;
             }
 
-
             .feature-grid {
                 grid-template-columns: 1fr;
             }
 
-
             .feature-box {
                 min-height: auto;
             }
-
-
-            .business-list > div {
-                min-height: 70px;
-            }
-
 
             .dashboard-stats {
                 grid-template-columns: 1fr;
@@ -1919,11 +1605,9 @@
                 font-size: 27px;
             }
 
-
             .faq-list summary {
                 font-size: 14px;
             }
-
 
             .cta-box h2 {
                 font-size: 38px;
@@ -1939,22 +1623,8 @@
                 width: 100%;
             }
 
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
         }
 
-
-        /* =========================================================
-           REDUCED MOTION
-        ========================================================= */
 
         @media (prefers-reduced-motion: reduce) {
 
@@ -1965,9 +1635,8 @@
             *,
             *::before,
             *::after {
-                animation-duration: .01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: .01ms !important;
+                animation: none !important;
+                transition: none !important;
             }
 
         }
@@ -1975,19 +1644,24 @@
     </style>
 </head>
 
+
 <body>
 
-    <!-- =========================================
+    <!-- =========================================================
          HEADER
-    ========================================== -->
+         File terpisah: header.html
+    ========================================================== -->
+
     <div id="header"></div>
 
 
     <main>
 
-        <!-- =========================================
+
+        <!-- =====================================================
              HERO
-        ========================================== -->
+        ====================================================== -->
+
         <section class="hero">
 
             <div class="container hero-grid">
@@ -2004,20 +1678,24 @@
                     </h1>
 
                     <p class="hero-description">
-                        Zenama Wave membantu bisnis mengarahkan pelanggan
-                        langsung ke halaman review Google hanya dengan
-                        satu scan QR atau satu sentuhan NFC.
+                        Zenama Wave membantu bisnis mengarahkan
+                        pelanggan langsung ke halaman review Google
+                        hanya dengan satu scan QR atau satu sentuhan NFC.
                     </p>
 
                     <div class="hero-buttons">
 
-                        <a href="#cara-kerja"
-                           class="btn btn-primary">
+                        <a
+                            href="#cara-kerja"
+                            class="btn btn-primary"
+                        >
                             Pelajari Cara Kerja
                         </a>
 
-                        <a href="#produk"
-                           class="btn btn-secondary">
+                        <a
+                            href="#produk"
+                            class="btn btn-secondary"
+                        >
                             Lihat Produk
                         </a>
 
@@ -2035,7 +1713,6 @@
                 </div>
 
 
-                <!-- PRODUCT 3D -->
                 <div class="hero-visual">
 
                     <div class="hero-product">
@@ -2048,13 +1725,12 @@
 
                     </div>
 
+
                     <div class="floating-badge badge-one">
 
                         <strong>QR</strong>
 
-                        <span>
-                            Scan
-                        </span>
+                        <span>Scan</span>
 
                     </div>
 
@@ -2063,9 +1739,7 @@
 
                         <strong>NFC</strong>
 
-                        <span>
-                            Tap
-                        </span>
+                        <span>Tap</span>
 
                     </div>
 
@@ -2076,9 +1750,10 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              INTRO
-        ========================================== -->
+        ====================================================== -->
+
         <section class="intro">
 
             <div class="container intro-grid">
@@ -2090,23 +1765,25 @@
                     </span>
 
                     <h2>
-                        Satu kartu untuk
-                        pengalaman review yang lebih praktis.
+                        Satu kartu untuk pengalaman
+                        review yang lebih praktis.
                     </h2>
 
                 </div>
 
+
                 <div>
 
                     <p>
-                        Di era digital, review pelanggan menjadi salah satu
-                        bagian penting dari perjalanan sebuah bisnis.
+                        Review pelanggan menjadi salah satu bagian
+                        penting dalam perjalanan sebuah bisnis.
                     </p>
 
                     <p>
-                        Zenama Wave membuat proses tersebut menjadi lebih
-                        sederhana. Pelanggan cukup melakukan scan QR atau
-                        tap menggunakan smartphone yang mendukung NFC.
+                        Zenama Wave membuat proses tersebut menjadi
+                        lebih sederhana. Pelanggan cukup melakukan
+                        scan QR atau tap menggunakan smartphone
+                        yang mendukung NFC.
                     </p>
 
                 </div>
@@ -2116,10 +1793,14 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              PRODUCT
-        ========================================== -->
-        <section class="product-section" id="produk">
+        ====================================================== -->
+
+        <section
+            class="product-section"
+            id="produk"
+        >
 
             <div class="container">
 
@@ -2135,9 +1816,9 @@
                     </h2>
 
                     <p>
-                        Zenama Wave menggabungkan kartu fisik dengan
-                        sistem digital untuk menghubungkan pelanggan
-                        dengan halaman review bisnis.
+                        Zenama Wave menggabungkan kartu fisik
+                        dengan sistem digital untuk menghubungkan
+                        pelanggan dengan halaman review bisnis.
                     </p>
 
                 </div>
@@ -2145,13 +1826,15 @@
 
                 <div class="product-showcase">
 
+
                     <!-- KARTU 2D -->
+
                     <div class="showcase-card">
 
                         <div class="card-image-wrapper">
 
                             <img
-                                src="https://zenamagroup.com/assets/zenamacard.png"
+                                src="https://zenamagroup.com/assets/zenama-card.png"
                                 alt="Zenama Wave Card"
                                 loading="lazy"
                             >
@@ -2181,6 +1864,7 @@
 
 
                         <div class="feature-list">
+
 
                             <div class="feature-item">
 
@@ -2249,6 +1933,7 @@
 
                             </div>
 
+
                         </div>
 
                     </div>
@@ -2260,10 +1945,14 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              HOW IT WORKS
-        ========================================== -->
-        <section class="how-section" id="cara-kerja">
+        ====================================================== -->
+
+        <section
+            class="how-section"
+            id="cara-kerja"
+        >
 
             <div class="container">
 
@@ -2286,6 +1975,7 @@
 
 
                 <div class="steps">
+
 
                     <div class="step">
 
@@ -2340,6 +2030,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -2347,9 +2038,10 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              FEATURES
-        ========================================== -->
+        ====================================================== -->
+
         <section class="features-section">
 
             <div class="container">
@@ -2374,6 +2066,7 @@
 
 
                 <div class="feature-grid">
+
 
                     <article class="feature-box">
 
@@ -2482,6 +2175,7 @@
 
                     </article>
 
+
                 </div>
 
             </div>
@@ -2489,14 +2183,16 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              FOR BUSINESS
-        ========================================== -->
+        ====================================================== -->
+
         <section class="business-section">
 
             <div class="container">
 
                 <div class="business-grid">
+
 
                     <div>
 
@@ -2558,14 +2254,16 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              DASHBOARD
-        ========================================== -->
+        ====================================================== -->
+
         <section class="dashboard-section">
 
             <div class="container">
 
                 <div class="dashboard-wrapper">
+
 
                     <div class="dashboard-text">
 
@@ -2584,8 +2282,10 @@
                             informasi kartu dan aktivitas pengguna.
                         </p>
 
-                        <a href="/dashboard.html"
-                           class="btn btn-primary">
+                        <a
+                            href="/dashboard.html"
+                            class="btn btn-primary"
+                        >
                             Buka Dashboard
                         </a>
 
@@ -2664,12 +2364,17 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              ABOUT
-        ========================================== -->
-        <section class="about-section" id="about">
+        ====================================================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
 
             <div class="container about-grid">
+
 
                 <div>
 
@@ -2683,6 +2388,7 @@
                     </h2>
 
                 </div>
+
 
                 <div>
 
@@ -2701,15 +2407,20 @@
 
                 </div>
 
+
             </div>
 
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              FAQ
-        ========================================== -->
-        <section class="faq-section" id="faq">
+        ====================================================== -->
+
+        <section
+            class="faq-section"
+            id="faq"
+        >
 
             <div class="container">
 
@@ -2727,6 +2438,7 @@
 
 
                 <div class="faq-list">
+
 
                     <details>
 
@@ -2806,6 +2518,7 @@
 
                     </details>
 
+
                 </div>
 
             </div>
@@ -2813,9 +2526,10 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =====================================================
              CTA
-        ========================================== -->
+        ====================================================== -->
+
         <section class="cta-section">
 
             <div class="container">
@@ -2836,15 +2550,20 @@
                         review digital melalui QR dan NFC.
                     </p>
 
+
                     <div class="cta-buttons">
 
-                        <a href="#produk"
-                           class="btn btn-light">
+                        <a
+                            href="#produk"
+                            class="btn btn-light"
+                        >
                             Lihat Produk
                         </a>
 
-                        <a href="mailto:company@zenamagroup.com"
-                           class="btn btn-outline-light">
+                        <a
+                            href="mailto:company@zenamagroup.com"
+                            class="btn btn-outline-light"
+                        >
                             Hubungi Kami
                         </a>
 
@@ -2856,35 +2575,46 @@
 
         </section>
 
+
     </main>
 
 
-    <!-- =========================================
+    <!-- =========================================================
          FOOTER
-    ========================================== -->
+         File terpisah: footer.html
+    ========================================================== -->
+
     <div id="footer"></div>
 
 
-    <!-- =========================================
-         HEADER & FOOTER LOADER
-    ========================================== -->
+    <!-- =========================================================
+         LOAD HEADER & FOOTER
+    ========================================================== -->
+
     <script>
 
-        async function loadComponent(id, file) {
+        async function loadComponent(
+            elementId,
+            file
+        ) {
 
             try {
 
-                const response = await fetch(file);
+                const response =
+                    await fetch(file);
 
                 if (!response.ok) {
                     throw new Error(
-                        `Gagal memuat ${file}`
+                        "Gagal memuat " + file
                     );
                 }
 
-                const html = await response.text();
+                const html =
+                    await response.text();
 
-                document.getElementById(id).innerHTML = html;
+                document.getElementById(
+                    elementId
+                ).innerHTML = html;
 
             } catch (error) {
 
@@ -2895,9 +2625,16 @@
         }
 
 
-        loadComponent("header", "header.html");
+        loadComponent(
+            "header",
+            "header.html"
+        );
 
-        loadComponent("footer", "footer.html");
+
+        loadComponent(
+            "footer",
+            "footer.html"
+        );
 
     </script>
 
